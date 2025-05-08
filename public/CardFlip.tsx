@@ -169,6 +169,7 @@ export const CardFlip = () => {
                     <div className="bg-white p-4 rounded-xl shadow-lg">
                       <Image src="/whatappqrcode.png" alt="WhatsApp QR code" width={192} height={192} className="w-48 h-48 object-contain rounded" />
                     </div>
+                    <div className="mt-4 text-white break-all text-center">{profile.socialLinks.whatsapp}</div>
                     <button
                       className="mt-6 px-4 py-2 bg-white text-gray-800 rounded"
                       onClick={e => { e.stopPropagation(); setOverlay('none'); }}
