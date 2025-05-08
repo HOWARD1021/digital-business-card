@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+<!-- cursor-pattern: **/* -->
+# Product Requirements: Digital Business Card Scanner
+
+This rule enforces the functional requirements for the Digital Business Card website. All features and implementations must align with the following user stories and expected outcomes:
+
+| Requirement ID | Description | User Story | Expected Behavior/Outcome |
+|----------------|-------------|------------|--------------------------|
+| FR001 | Uploading Business Card Image | As a user, I want to upload a photo of a business card so I can digitize it. | The system should provide an upload interface that accepts image files (JPG, PNG) of business cards. |
+| FR002 | OCR Text Extraction | As a user, I want the system to automatically extract text from my card image. | The system should use OCR to detect and extract text information from the uploaded business card image. |
+| FR003 | Information Categories | As a user, I want the extracted information to be organized into categories (name, phone, email, etc.). | The system should categorize extracted text into predefined fields like name, title, company, phone, email, and address. |
+| FR004 | Editing Extracted Info | As a user, I want to edit the extracted information if there are any errors. | The system should allow users to modify any automatically extracted information before saving. |
+| FR005 | Saving Digital Cards | As a user, I want to save the processed business card to my collection. | The system should store the card image and extracted information in the user's digital card collection. |
+| FR006 | Viewing Card Collection | As a user, I want to view all my saved business cards in one place. | The system should provide a dashboard showing all saved business cards with their key information. |
+| FR007 | Searching Cards | As a user, I want to search through my saved cards using various criteria. | The system should allow searching by name, company, or other fields within the saved cards. |
+| FR008 | Sharing Digital Cards | As a user, I want to share my digital business cards with others. | The system should generate shareable links for individual cards or the entire collection. |
+| FR009 | Exporting Contact Info | As a user, I want to export card information to standard formats (vCard, CSV). | The system should provide export options for contact information in common formats. |
+| FR010 | Card Organization | As a user, I want to organize my cards into groups or categories. | The system should allow creating folders or tags to organize saved business cards. |
+| FR011 | Mobile Compatibility | As a user, I want to capture and process cards directly from my mobile device. | The system should work smoothly on mobile devices with camera integration. |
+| FR012 | Data Privacy | As a user, I want my uploaded card information to be secure and private. | The system should implement proper security measures to protect stored business card data. |
+| FR013 | Card Backside & Social Profile | As a user, I want to flip the business card to see the back, which shows my profile, links, QR code, and social icons. | The system should allow flipping the card to reveal a profile page with avatar, name, description, main links, QR code, and social icons, styled as a modern digital profile card. The QR code button should replace the backside content with a large QR code image. The QR code content (URL) should be user-definable, but is not implemented yet. |
+
+**Detailed Rules for Card Flip & Backside (FR013):**
+- The card must support a 3D flip animation (click or tap to flip between front and back).
+- The backside must include:
+  - A circular avatar at the top
+  - User name and a short description
+  - At least four main action buttons (e.g., channel, blog, outfits, affiliate links)
+  - A row of social media icons (e.g., Twitter, Facebook, Instagram, Spotify)
+  - A visible QR code (for sharing contact or profile info)
+  - A visually appealing gradient background and rounded corners
+- All elements must be responsive and accessible (keyboard/tab navigation, aria-labels)
+- The QR code should be generated dynamically based on the user's profile or contact link
+- The design should closely match the provided reference image for layout and style
+
+**All implementations must fulfill these requirements. If a feature or code does not align with these, it should be revised.**
