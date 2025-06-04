@@ -23,6 +23,7 @@ This rule enforces the functional requirements for the Digital Business Card web
 | FR011 | Mobile Compatibility | As a user, I want to capture and process cards directly from my mobile device. | The system should work smoothly on mobile devices with camera integration. |
 | FR012 | Data Privacy | As a user, I want my uploaded card information to be secure and private. | The system should implement proper security measures to protect stored business card data. |
 | FR013 | Card Backside & Social Profile | As a user, I want to flip the business card to see the back, which shows my profile, links, QR code, and social icons. | The system should allow flipping the card to reveal a profile page with avatar, name, description, main links, QR code, and social icons, styled as a modern digital profile card. The QR code button should replace the backside content with a large QR code image. The QR code content (URL) should be user-definable, but is not implemented yet. |
+| FR014 | Comprehensive Shopping List Management | As a user, I want to view and manage all my shopping data (grocery lists, receipts from different stores) in one unified interface. | The system should provide a single page (`/shoplist`) that consolidates all shopping-related data including grocery lists, Woolworths receipts, and PAK'nSAVE receipts. Store names should be clearly distinguished with color-coded tags, and all data should be exportable as CSV. |
 
 **Detailed Rules for Card Flip & Backside (FR013):**
 - The card must support a 3D flip animation (click or tap to flip between front and back).
@@ -36,5 +37,34 @@ This rule enforces the functional requirements for the Digital Business Card web
 - All elements must be responsive and accessible (keyboard/tab navigation, aria-labels)
 - The QR code should be generated dynamically based on the user's profile or contact link
 - The design should closely match the provided reference image for layout and style
+
+**Detailed Rules for Shopping List Management (FR014):**
+- All shopping data must be consolidated into a single page (`/shoplist`) accessible via direct URL (hidden from business card UI)
+- Store identification must use color-coded tags in the first table column:
+  - 🔵 Jadan 超市 (Blue)
+  - 🟢 Woolworths (Green)  
+  - 🔴 PAK'nSAVE (Red)
+- Data should include:
+  - Original grocery shopping list (19 items from Jadan + Woolworths)
+  - Woolworths Mt Eden receipt (14 items)
+  - PAK'nSAVE Royal Oak receipt (12 items)
+- Summary statistics must show total items count and dual currency totals (NZD/TWD)
+- CSV export functionality must include all consolidated data
+- Page must use purple-pink gradient theme with responsive design
+- Shopping list link is HIDDEN from business card navigation (not visible in UI)
+
+**Implementation Notes:**
+- **Path Change:** Updated from `/grocery-list` to `/shoplist` for shorter URL
+- **UI Change:** Removed shopping list link from business card backside (hidden from user interface)
+- Removed separate `/woolworths-receipt` and `/paknsave-receipt` pages (consolidated into `/shoplist`)
+- Shopping list page accessible via direct URL navigation only
+- Fixed ESLint issues with apostrophes using HTML entities (&apos;)
+- Removed back navigation link from shopping list page for cleaner interface
+
+**Current URL Structure:**
+- `/` - Main business card with flip animation
+- `/shoplist` - Hidden comprehensive shopping list (not linked from UI)
+- `/woolworths-receipt` - Individual Woolworths receipt page  
+- `/paknsave-receipt` - Individual PAK'nSAVE receipt page
 
 **All implementations must fulfill these requirements. If a feature or code does not align with these, it should be revised.**

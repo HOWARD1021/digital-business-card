@@ -1,5 +1,24 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Digital Business Card Scanner
+
+A modern digital business card scanner application with shopping list management functionality.
+
+### Features
+- 🎴 Interactive digital business card with flip animation
+- 📱 Responsive design for mobile and desktop
+- 🛒 Comprehensive shopping list management system
+- 📊 CSV export functionality for shopping data
+- 🎨 Modern UI with gradient backgrounds and smooth animations
+
+### Available Routes
+- `/` - Main business card page with flip animation
+- `/shoplist` - Hidden comprehensive shopping list management system (consolidated from previous grocery-list)
+- `/woolworths-receipt` - Woolworths Mt Eden receipt data
+- `/paknsave-receipt` - PAK'nSAVE Royal Oak receipt data
+
+> **Note:** The `/shoplist` route is a shortened path for the shopping list management system. It's not linked from the business card UI but can be accessed directly.
+
 ## Getting Started
 
 First, run the development server:
