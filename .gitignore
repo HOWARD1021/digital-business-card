@@ -33,6 +33,12 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# Cloudflare Workers 敏感文件
+.wrangler/
+wrangler.toml
+wrangler.toml.local
+*.log
+
 # vercel
 .vercel
 

@@ -1,0 +1,75 @@
+name = "digital-business-card-api"
+main = "src/workers/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# 觀測性配置
+[observability]
+enabled = true
+
+# D1 數據庫綁定 (本地開發)
+[[d1_databases]]
+binding = "DB"
+database_name = "script-manager-db-dev"
+database_id = "YOUR_DEV_DATABASE_ID"
+
+# R2 存儲綁定 (本地開發)
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "script-images-dev"
+
+# KV 緩存綁定 (本地開發)
+[[kv_namespaces]]
+binding = "CACHE"
+id = "YOUR_KV_NAMESPACE_ID"
+preview_id = "YOUR_KV_PREVIEW_ID"
+
+# 環境變量 (本地開發)
+[vars]
+ENVIRONMENT = "development"
+CORS_ORIGIN = "*"
+JWT_SECRET = "YOUR_DEV_JWT_SECRET"
+
+# 生產環境配置
+[env.production]
+name = "digital-business-card-api"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "script-manager-db"
+database_id = "YOUR_PROD_DATABASE_ID"
+
+[[env.production.r2_buckets]]
+binding = "BUCKET"
+bucket_name = "script-images"
+
+[[env.production.kv_namespaces]]
+binding = "CACHE"
+id = "YOUR_PROD_KV_NAMESPACE_ID"
+
+[env.production.vars]
+ENVIRONMENT = "production"
+CORS_ORIGIN = "https://yourdomain.com"
+JWT_SECRET = "YOUR_PROD_JWT_SECRET"
+
+# 開發環境配置
+[env.development]
+name = "digital-business-card-api-dev"
+
+[[env.development.d1_databases]]
+binding = "DB"
+database_name = "script-manager-db-dev"
+database_id = "YOUR_DEV_DATABASE_ID"
+
+[[env.development.r2_buckets]]
+binding = "BUCKET"
+bucket_name = "script-images-dev"
+
+[[env.development.kv_namespaces]]
+binding = "CACHE"
+id = "YOUR_DEV_KV_NAMESPACE_ID"
+
+[env.development.vars]
+ENVIRONMENT = "development"
+CORS_ORIGIN = "*"
+JWT_SECRET = "YOUR_DEV_JWT_SECRET"
