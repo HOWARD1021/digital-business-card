@@ -1,0 +1,82 @@
+# Cloudflare Workers 配置模板
+# 複製此文件為 wrangler.toml 並修改相應值
+
+# 基本配置
+name = "your-project-name"           # 修改為你的專案名稱
+main = "src/workers/index.ts"        # Worker 入口文件路径
+compatibility_date = "2025-01-01"    # API 兼容日期
+compatibility_flags = ["nodejs_compat"]
+
+# 觀測性配置
+[observability]
+enabled = true
+
+# === 第一次設置時需要創建這些資源 ===
+
+# 1. 創建 D1 數據庫
+# wrangler d1 create your-project-db
+[[d1_databases]]
+binding = "DB"                       # 代碼中通過 c.env.DB 訪問
+database_name = "your-project-db"    # 修改為你的數據庫名
+database_id = "YOUR_DB_ID_HERE"     # 執行創建命令後獲得
+
+# 2. 創建 R2 存儲桶
+# wrangler r2 bucket create your-project-files
+[[r2_buckets]]
+binding = "BUCKET"                   # 代碼中通過 c.env.BUCKET 訪問
+bucket_name = "your-project-files"   # 修改為你的桶名
+
+# 3. 創建 KV 命名空間
+# wrangler kv namespace create CACHE
+[[kv_namespaces]]
+binding = "CACHE"                    # 代碼中通過 c.env.CACHE 訪問
+id = "YOUR_KV_ID_HERE"              # 執行創建命令後獲得
+preview_id = "YOUR_KV_PREVIEW_ID"    # 用於本地開發
+
+# 環境變量 (開發)
+[vars]
+ENVIRONMENT = "development"
+CORS_ORIGIN = "*"                   # 開發時允許所有來源
+JWT_SECRET = "dev-jwt-secret-change-me"
+API_VERSION = "v1"
+
+# 生產環境配置
+[env.production]
+name = "your-project-name"          # 生產環境 Worker 名稱
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "your-project-db-prod"
+database_id = "YOUR_PROD_DB_ID"     # 生產數據庫 ID
+
+[[env.production.r2_buckets]]
+binding = "BUCKET"
+bucket_name = "your-project-files-prod"
+
+[[env.production.kv_namespaces]]
+binding = "CACHE"
+id = "YOUR_PROD_KV_ID"
+
+[env.production.vars]
+ENVIRONMENT = "production"
+CORS_ORIGIN = "https://yourdomian.com"  # 限制生產環境來源
+JWT_SECRET = "your-secure-jwt-secret"   # 使用強密碼
+
+# 測試環境配置 (可選)
+[env.staging]
+name = "your-project-name-staging"
+
+[[env.staging.d1_databases]]
+binding = "DB"
+database_name = "your-project-db-staging"
+database_id = "YOUR_STAGING_DB_ID"
+
+# === 設置腳本範例 ===
+# 1. npm install wrangler -g
+# 2. wrangler login
+# 3. wrangler d1 create your-project-db
+# 4. wrangler r2 bucket create your-project-files  
+# 5. wrangler kv namespace create CACHE
+# 6. 更新此文件中的所有 ID
+# 7. wrangler dev (測試本地開發)
+# 8. wrangler deploy (部署到生產)

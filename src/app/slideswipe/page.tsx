@@ -2,96 +2,200 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { useSearchParams, useRouter } from "next/navigation";
+import { apiClient } from "../../lib/api-client";
+import { ArrowLeft } from "lucide-react";
 
 interface Item {
   id: number;
   original: string;
   styled: string;
+  styleName: string;
 }
 
-// Single original image + eight styled variants (PNG)
-// Place original at: public/slides/original.png
-// Place styled variants at: public/slides/styled/1.png … 8.png
-const ORIGINAL_SRC = "/slides/original.png";
+// Grug 說：24種風格太多了，簡化到 8 種核心風格
+const CORE_STYLES = [
+  "吉卜力工作室風格",
+  "海賊王 One Piece",
+  "鬼滅之刃 Demon Slayer", 
+  "美少女戰士 Sailor Moon",
+  "七龍珠 Dragon Ball",
+  "新世紀福音戰士",
+  "Disney 經典風格",
+  "Rick and Morty"
+];
 
-const items: Item[] = Array.from({ length: 8 }).map((_, idx) => {
-  const id = idx + 1;
-  return {
-    id,
-    original: ORIGINAL_SRC,
-    styled: `/slides/styled/${id}.png`,
-  } as Item;
-});
+export default function SlideswipePage() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const imageId = searchParams?.get("imageId");
 
-const STEP_DELAY = 800; // slower stagger for button-driven start
-const REVEAL_DURATION = 1200; // slower swipe animation
+  const [items, setItems] = useState<Item[]>([]);
+  const [revealed, setRevealed] = useState<boolean[]>([]);
+  const [loading, setLoading] = useState(true);
 
-const SwipeCell: React.FC<{ item: Item; reveal: boolean }> = ({ item, reveal }) => {
+  // Grug 說：簡化圖片加載邏輯
+  useEffect(() => {
+    const loadImages = async () => {
+      try {
+        let originalUrl = "/slides/original.png";
+        let styledImages: Item[] = [];
+
+        if (imageId) {
+          // 使用指定圖片
+          const imageData = await apiClient.getImage(parseInt(imageId));
+          originalUrl = apiClient.getImageDownloadUrl(parseInt(imageId));
+        } else {
+          // 使用首頁圖 (Category 1)
+          const homeImages = await apiClient.getImages({ category: 1, limit: 1 });
+          if (homeImages.images.length > 0) {
+            originalUrl = apiClient.getImageDownloadUrl(homeImages.images[0].id);
+          }
+        }
+
+        // 獲取風格圖 (Category 2)
+        const styleImages = await apiClient.getImages({ category: 2, limit: 8 });
+        
+        if (styleImages.images.length > 0) {
+          styledImages = styleImages.images.map((img, idx) => ({
+            id: img.id,
+            original: originalUrl,
+            styled: apiClient.getImageDownloadUrl(img.id),
+            styleName: CORE_STYLES[idx] || `風格 ${idx + 1}`
+          }));
+        } else {
+          // Fallback 到預設圖片
+          styledImages = Array.from({ length: 8 }).map((_, idx) => ({
+            id: idx + 1,
+            original: originalUrl,
+            styled: `/slides/styled/${idx + 1}.png`,
+            styleName: CORE_STYLES[idx]
+          }));
+        }
+
+        setItems(styledImages);
+        setRevealed(new Array(styledImages.length).fill(false));
+      } catch (error) {
+        console.error('Failed to load images:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadImages();
+  }, [imageId]);
+
+  // Grug 說：簡化動畫邏輯
+  const startAnimation = () => {
+    setRevealed(new Array(items.length).fill(false));
+    
+    items.forEach((_, index) => {
+      setTimeout(() => {
+        setRevealed(prev => {
+          const next = [...prev];
+          next[index] = true;
+          return next;
+        });
+      }, index * 800);
+    });
+  };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-white">載入中...</div>
+      </div>
+    );
+  }
+
   return (
-    <div className="relative w-full aspect-[3/4] overflow-hidden bg-black/80 rounded-lg">
-      {/* original */}
-      <Image src={item.original} alt="orig" fill className="object-cover" unoptimized />
+    <div className="min-h-screen bg-black text-white">
+      
+      {/* Grug 頂部工具欄：簡單直接 */}
+      <div className="flex items-center justify-between p-4 bg-gray-900">
+        <button
+          onClick={() => router.back()}
+          className="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          返回
+        </button>
+        
+        <h1 className="text-lg font-bold">風格轉換</h1>
+        
+        <button
+          onClick={startAnimation}
+          className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+        >
+          開始
+        </button>
+      </div>
 
-      {/* styled overlay with swipe reveal */}
+      {/* Grug 網格：統一整齊的 2x4 布局 */}
+      <div className="p-4">
+        <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+          {items.map((item, index) => (
+            <SwipeCell
+              key={item.id}
+              item={item}
+              revealed={revealed[index]}
+              index={index}
+            />
+          ))}
+        </div>
+      </div>
+
+    </div>
+  );
+}
+
+// Grug 說：簡化組件，只保留核心功能
+interface SwipeCellProps {
+  item: Item;
+  revealed: boolean;
+  index: number;
+}
+
+function SwipeCell({ item, revealed, index }: SwipeCellProps) {
+  return (
+    <div className="relative aspect-[9/16] bg-gray-900 rounded-lg overflow-hidden">
+      
+      {/* 背景圖（風格化後） */}
       <Image
         src={item.styled}
-        alt="styled"
+        alt="Styled"
         fill
-        className="object-cover absolute top-0 left-0"
-        style={{
-          clipPath: reveal ? "inset(0 0 0 0)" : "inset(0 100% 0 0)",
-          transition: `clip-path ${REVEAL_DURATION}ms linear`,
-        }}
+        className="object-contain"
         unoptimized
       />
 
-      {/* moving line */}
+      {/* 滑動遮罩（原圖） */}
       <div
-        className="absolute top-0 bottom-0 w-[3px] bg-white/80"
+        className="absolute inset-0 transition-all duration-1200 ease-out"
         style={{
-          transform: reveal ? "translateX(100%)" : "translateX(0)",
-          transition: `transform ${REVEAL_DURATION}ms linear`,
+          clipPath: revealed
+            ? "polygon(0 0, 0 0, 0 100%, 0 100%)"
+            : "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
         }}
-      />
-    </div>
-  );
-};
-
-export default function SlideSwipePage() {
-  const [revealed, setRevealed] = useState<boolean[]>(Array(items.length).fill(false));
-  const [started, setStarted] = useState(false);
-
-  useEffect(() => {
-    if (!started) return;
-
-    // reset
-    setRevealed(Array(items.length).fill(false));
-
-    items.forEach((_, i) => {
-      setTimeout(() => {
-        setRevealed((prev) => {
-          const next = [...prev];
-          next[i] = true;
-          return next;
-        });
-      }, i * STEP_DELAY);
-    });
-  }, [started]);
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex flex-col items-center justify-center p-4 space-y-8">
-      <div className="grid grid-cols-2 gap-4 w-full max-w-md">
-        {items.map((item, idx) => (
-          <SwipeCell key={item.id} item={item} reveal={revealed[idx]} />
-        ))}
+      >
+        <Image
+          src={item.original}
+          alt="Original"
+          fill
+          className="object-contain bg-black/20"
+          unoptimized
+        />
       </div>
 
-      <button
-        onClick={() => setStarted((s) => !s)}
-        className="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors text-white font-medium"
-      >
-        {started ? "重新開始" : "開始掃描"}
-      </button>
+      {/* Grug 標籤：簡單清楚 */}
+      <div className="absolute bottom-4 left-4 right-4">
+        <div className="bg-black/70 backdrop-blur-sm rounded-lg px-3 py-2">
+          <div className="text-sm font-medium text-white">
+            {item.styleName}
+          </div>
+        </div>
+      </div>
+
     </div>
   );
-} 
+}

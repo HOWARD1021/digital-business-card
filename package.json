@@ -4,26 +4,40 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "dev:workers": "wrangler dev src/workers/index.ts",
+    "quick-start": "concurrently -k -n workers,web -c blue,green \"wrangler dev src/workers/index.ts\" \"next dev --turbopack\"",
     "build": "next build",
+    "build:workers": "wrangler deploy src/workers/index.ts",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "workers:db:create": "wrangler d1 create script-manager-db",
+    "workers:db:migrate": "wrangler d1 migrations apply script-manager-db",
+    "workers:db:migrate:local": "wrangler d1 migrations apply script-manager-db --local",
+    "workers:r2:create": "wrangler r2 bucket create script-images-dev",
+    "workers:kv:create": "wrangler kv namespace create CACHE"
   },
   "dependencies": {
+    "@hono/zod-validator": "^0.2.0",
     "framer-motion": "^12.10.0",
+    "hono": "^4.0.0",
     "lucide-react": "^0.507.0",
     "next": "15.3.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "zod": "^3.22.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240000.0",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.33.1"
   }
 }

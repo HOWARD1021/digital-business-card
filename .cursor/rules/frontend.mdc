@@ -39,6 +39,45 @@ This rule applies to all frontend code in the project, including:
 - Implement accessibility features on elements (e.g., `tabindex=\"0\"`, `aria-label`, `on:click`, `on:keydown`).
 - Use `const` instead of `function` for function declarations (e.g., `const toggle = () => {}`), and define a type if possible.
 
+## Cloudflare Workers API Integration Guidelines
+- Use the centralized API client (`src/lib/api-client.ts`) for all backend communication
+- Implement proper error handling with user-friendly messages
+- Use TypeScript interfaces from `src/types/index.ts` for type safety
+- Handle loading states and provide appropriate feedback to users
+- Implement optimistic updates where appropriate for better UX
+- Use React hooks for data fetching and state management
+- Cache API responses appropriately to reduce server load
+- Implement proper retry logic for failed API calls
+
+## Image Processing Integration Guidelines
+- Extend existing `/slideswipe` functionality for style processing
+- Implement drag-and-drop file upload with progress indicators
+- Show image previews before and after processing
+- Handle multiple file formats (JPG, PNG, WebP)
+- Implement proper error handling for processing failures
+- Display processing status and estimated completion time
+- Allow users to download or save processed images
+- Implement image optimization for web display
+
+## Dashboard UI Guidelines
+- Use modern glassmorphism design with backdrop blur effects
+- Implement responsive grid/list view toggle for image display
+- Provide comprehensive search and filter functionality
+- Show real-time upload progress with visual indicators
+- Support batch operations (select multiple, bulk delete)
+- Display detailed statistics cards with icons and gradients
+- Use hover effects and smooth transitions for better UX
+- Implement modal dialogs for upload and confirmation actions
+- Ensure accessibility with proper ARIA labels and keyboard navigation
+
+## State Management Guidelines
+- Use React's built-in state management (useState, useReducer) for component state
+- Implement custom hooks for complex state logic
+- Use context providers for global state when needed
+- Maintain consistent state shape across components
+- Handle async operations with proper loading and error states
+- Implement proper cleanup for subscriptions and timers
+
 ---
 
 Reference this rule for all frontend code in the project. For project structure or file references, see other rules in the `.cursor/rules` directory.
