@@ -30,6 +30,11 @@ This rule enforces the functional requirements for the Digital Business Card web
 | FR018 | Rating and Feedback System | As a user, I want to rate and provide feedback on scripts and generated content. | The system should allow 1-5 star ratings, comments, and aggregate feedback statistics for quality improvement. |
 | FR019 | Usage Analytics and Statistics | As a user, I want to track script usage, generation patterns, and performance metrics. | The system should collect and display analytics on script popularity, generation success rates, and user engagement patterns. |
 | FR020 | Image Storage and Management Dashboard | As a user, I want a modern dashboard to upload, view, search, and manage all my images with statistics. | The system should provide a comprehensive image management interface with drag-and-drop upload, grid/list view, search functionality, batch operations, and detailed statistics. |
+| FR021 | Image-to-Image (I2I) Transformation | As a user, I want to transform images using AI-powered style transfer and artistic filters. | The system should provide I2I transformation capabilities that can convert uploaded images into different artistic styles using Google AI/Imagen APIs with iterative improvement through self-correction loops. |
+| FR022 | AI-Powered Image Description | As a user, I want the system to automatically generate detailed descriptions of my images. | The system should use AI models to analyze uploaded images and generate descriptive text that can be used for accessibility, cataloging, or prompt improvement. |
+| FR023 | Iterative Image Improvement | As a user, I want the system to automatically improve image generation through multiple iterations. | The system should implement a self-correction loop: generate image → describe result → evaluate quality → improve prompt → regenerate, until satisfactory results are achieved. |
+| FR024 | Dual-Model Cost Optimization | As a user, I want the system to optimize costs by using appropriate AI models for different tasks. | The system should use a dual-model approach: expensive paid models for image generation, free models for description and evaluation tasks. |
+| FR025 | Secure API Key Management | As an admin, I want to securely store and manage AI API keys with encryption. | The system should provide an admin interface to store encrypted Google AI API keys, with password-protected access and automatic fallback between primary/secondary keys. |
 
 **Detailed Rules for Card Flip & Backside (FR013):**
 - The card must support a 3D flip animation (click or tap to flip between front and back).
@@ -101,12 +106,48 @@ This rule enforces the functional requirements for the Digital Business Card web
 - Implement proper caching strategies using KV store
 - Follow Cloudflare Workers best practices for performance
 
+**Detailed Rules for I2I (Image-to-Image) System (FR021-FR025):**
+- I2I transformation must support multiple image formats (JPG, PNG, WebP)
+- System must implement iterative improvement loop with configurable max iterations (default: 3)
+- Image generation must use Google Imagen API with fallback mechanisms
+- Description and evaluation must use Google Gemini models (cost-optimized)
+- All generated images must be stored in Cloudflare R2 with proper metadata
+- Image metadata must include: original_url, transformation_prompt, iteration_count, model_used, generation_timestamp
+- API keys must be encrypted using AES-256 and stored in Cloudflare D1 database
+- Admin interface must require password authentication for key management
+- System must support primary/secondary API key fallback for reliability
+- Rate limiting must be implemented to prevent API abuse (10 requests per minute default)
+- All I2I operations must be logged for debugging and cost tracking
+- File naming convention: `i2i_success_YYYYMMDD_HHMMSS_xxxx.png`
+- Error handling must include retry logic with exponential backoff
+- Processing status must be tracked and accessible via API
+- System must support batch processing for multiple images
+
+**I2I API Endpoints:**
+- `POST /api/i2i/transform` - Transform image with iterative improvement
+- `GET /api/admin/keys/status` - Check API key configuration status
+- `POST /api/admin/keys` - Store/update encrypted API keys (admin only)
+- `GET /api/admin/keys` - Retrieve API key status (admin only)
+
+**I2I Workflow:**
+1. User uploads image via multipart/form-data
+2. System validates image format and size
+3. Initial transformation using provided prompt
+4. AI describes generated image
+5. AI evaluates quality and suggests improvements
+6. If quality insufficient, improve prompt and regenerate (max 3 iterations)
+7. Store final result in R2 and metadata in D1
+8. Return transformed image URL and processing details
+
 **Current URL Structure (Updated):**
 - `/` - Main business card with flip animation
 - `/script` - Script management interface (integrates with Cloudflare API)
 - `/slideswipe` - Image style processing interface
 - `/shoplist` - Hidden comprehensive shopping list (not linked from UI)
 - `/dashboard` - Modern image management dashboard with upload, view, and statistics
-- `/api/*` - Cloudflare Workers API endpoints
+- `/admin/keys` - Admin interface for API key management (password protected)
+- `/api/i2i/*` - I2I transformation API endpoints
+- `/api/admin/*` - Admin API endpoints
+- `/api/*` - Other Cloudflare Workers API endpoints
 
 **All implementations must fulfill these requirements. If a feature or code does not align with these, it should be revised.**

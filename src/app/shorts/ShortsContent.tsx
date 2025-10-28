@@ -32,6 +32,21 @@ export default function ShortsContent() {
   const router = useRouter();
   const imageId = searchParams?.get('imageId');
 
+  // 參數：疊加圖與行為控制
+  const overlayIdParam = searchParams?.get('overlayId');
+  const overlayUrlParam = searchParams?.get('overlayUrl');
+  const overlaySizeParam = searchParams?.get('overlaySize');
+  const overlayMarginParam = searchParams?.get('overlayMargin');
+  const overlayLinkParam = searchParams?.get('overlayLink');
+  const showCellLabelsParam = searchParams?.get('showCellLabels');
+  const disableAnimationParam = searchParams?.get('disableAnimation');
+
+  const animationEnabled = disableAnimationParam !== '1';
+  const showCellLabels = showCellLabelsParam !== '0';
+
+  const overlaySize = overlaySizeParam ? parseInt(overlaySizeParam, 10) : 15;
+  const overlayMargin = overlayMarginParam ? parseInt(overlayMarginParam, 10) : 16;
+
   const [items, setItems] = useState<ShortsItem[]>([]);
   const [revealed, setRevealed] = useState<boolean[]>([]);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -103,6 +118,7 @@ export default function ShortsContent() {
 
   // 開始動畫 - 邏輯修正：初始全原圖，轉換後顯示動漫風格
   const startAnimation = () => {
+    if (!animationEnabled) return;
     setIsPlaying(true);
     // 重置：所有格子都顯示原圖
     setRevealed(new Array(items.length).fill(false));
@@ -135,6 +151,7 @@ export default function ShortsContent() {
     const handleKeyPress = (e: KeyboardEvent) => {
       if (e.code === 'Space') {
         e.preventDefault();
+        if (!animationEnabled) return;
         if (isPlaying) {
           resetAnimation();
         } else {
@@ -145,7 +162,7 @@ export default function ShortsContent() {
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [isPlaying, items.length]);
+  }, [animationEnabled, isPlaying, items.length]);
 
   if (loading) {
     return (
@@ -173,18 +190,21 @@ export default function ShortsContent() {
 
   const gridSize = items.length;
   
-  // 根據圖片數量決定網格布局 - 優化版，讓圖片更大更清晰
+  // 根據圖片數量決定網格布局 - 固定 2x2 或 4x2（2:4 排列）
   const getGridLayout = () => {
     if (gridSize <= 4) {
       return { rows: 2, cols: 2 }; // 2x2 每張圖佔 1/4
-    } else if (gridSize <= 6) {
-      return { rows: 2, cols: 3 }; // 2x3 每張圖佔 1/6，讓圖片更大
     } else {
-      return { rows: 3, cols: 3 }; // 3x3 每張圖佔 1/9，最大化圖片尺寸
+      return { rows: 4, cols: 2 }; // 4x2 每張圖佔 1/8，適合 8 張
     }
   };
 
   const { rows, cols } = getGridLayout();
+
+  // 計算疊加圖來源（僅在顯式提供 overlayId 或 overlayUrl 時顯示）
+  const overlaySrc = overlayIdParam && !isNaN(parseInt(overlayIdParam, 10))
+    ? apiClient.getImageDownloadUrl(parseInt(overlayIdParam, 10))
+    : (overlayUrlParam ? overlayUrlParam : '');
 
   return (
     <div className="w-full h-screen bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
@@ -211,11 +231,14 @@ export default function ShortsContent() {
         
         {/* 開始/重置按鈕 */}
         <button
-          onClick={isPlaying ? resetAnimation : startAnimation}
+          onClick={isPlaying ? resetAnimation : (animationEnabled ? startAnimation : undefined)}
+          disabled={!animationEnabled}
           className={`flex items-center gap-2 px-4 py-2 backdrop-blur-md rounded-xl transition-all duration-300 text-white border hover:shadow-lg ${
             isPlaying
               ? 'bg-red-500/80 hover:bg-red-500/90 border-red-400/50 hover:shadow-red-500/20'
-              : 'bg-green-500/80 hover:bg-green-500/90 border-green-400/50 hover:shadow-green-500/20'
+              : animationEnabled
+                ? 'bg-green-500/80 hover:bg-green-500/90 border-green-400/50 hover:shadow-green-500/20'
+                : 'bg-gray-600/70 border-gray-500/50 cursor-not-allowed'
           }`}
         >
           {isPlaying ? (
@@ -257,7 +280,7 @@ export default function ShortsContent() {
         <div className="bg-black/70 backdrop-blur-md px-4 py-3 rounded-xl text-white text-xs text-center border border-white/10">
           <div className="mb-1">
             <span className="text-lg font-bold text-blue-400">
-              {gridSize <= 4 ? '1/4' : gridSize <= 6 ? '1/6' : '1/9'}
+              {gridSize <= 4 ? '1/4' : '1/8'}
             </span>
           </div>
           <div className="text-gray-300">畫面比例</div>
@@ -294,9 +317,42 @@ export default function ShortsContent() {
                 originalImageUrl={originalImageUrl}
                 revealed={revealed[index]}
                 index={index}
+                showCellLabels={showCellLabels}
               />
             ))}
           </div>
+
+          {/* 右下角疊加圖（整個 9:16 畫面） */}
+          {overlaySrc && (
+            overlayLinkParam ? (
+              <a
+                href={overlayLinkParam}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute z-30"
+                style={{ bottom: overlayMargin, right: overlayMargin, width: `${overlaySize}%` }}
+              >
+                <img
+                  src={overlaySrc}
+                  alt="overlay"
+                  className="w-full h-auto rounded-lg shadow-lg pointer-events-auto"
+                  draggable={false}
+                />
+              </a>
+            ) : (
+              <div
+                className="absolute z-30 pointer-events-none"
+                style={{ bottom: overlayMargin, right: overlayMargin, width: `${overlaySize}%` }}
+              >
+                <img
+                  src={overlaySrc}
+                  alt="overlay"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                  draggable={false}
+                />
+              </div>
+            )
+          )}
 
         </div>
       </div>
@@ -311,9 +367,10 @@ interface ShortsCellProps {
   originalImageUrl: string;
   revealed: boolean;
   index: number;
+  showCellLabels: boolean;
 }
 
-function ShortsCell({ item, originalImageUrl, revealed, index }: ShortsCellProps) {
+function ShortsCell({ item, originalImageUrl, revealed, index, showCellLabels }: ShortsCellProps) {
   return (
     <div className="relative w-full h-full bg-black/20 rounded-xl overflow-hidden group backdrop-blur-sm border border-white/5">
       {/* 內部容器 - 確保圖片適應顯示 */}
@@ -352,16 +409,18 @@ function ShortsCell({ item, originalImageUrl, revealed, index }: ShortsCellProps
 
 
       {/* 動漫風格標識 - 右下角小標識，帶懸停效果 */}
-      <div className="absolute bottom-3 right-3">
-        <div className={`backdrop-blur-md rounded-xl px-3 py-2 flex items-center gap-2 border transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg ${
-          item.isOriginal
-            ? 'bg-yellow-500/95 text-black border-yellow-400/50 shadow-yellow-500/20'
-            : 'bg-black/80 text-white border-white/20 shadow-black/30'
-        }`}>
-          <span className="text-lg">{item.animeIcon}</span>
-          <span className="text-sm font-semibold">{item.animeStyle}</span>
+      {showCellLabels && (
+        <div className="absolute bottom-3 right-3">
+          <div className={`backdrop-blur-md rounded-xl px-3 py-2 flex items-center gap-2 border transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg ${
+            item.isOriginal
+              ? 'bg-yellow-500/95 text-black border-yellow-400/50 shadow-yellow-500/20'
+              : 'bg-black/80 text-white border-white/20 shadow-black/30'
+          }`}>
+            <span className="text-lg">{item.animeIcon}</span>
+            <span className="text-sm font-semibold">{item.animeStyle}</span>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* 邊框效果 - 當圖片轉換時顯示 */}
       <div className={`absolute inset-0 rounded-xl transition-all duration-700 pointer-events-none ${

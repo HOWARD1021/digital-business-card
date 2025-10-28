@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Image from "next/image";
 import { useSearchParams, useRouter } from "next/navigation";
 import { apiClient } from "../../lib/api-client";
@@ -26,6 +26,18 @@ const CORE_STYLES = [
 ];
 
 export default function SlideswipePage() {
+  return (
+    <Suspense fallback={(
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-white">載入中...</div>
+      </div>
+    )}>
+      <SlideswipeContent />
+    </Suspense>
+  );
+}
+
+function SlideswipeContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const imageId = searchParams?.get("imageId");

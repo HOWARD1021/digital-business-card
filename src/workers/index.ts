@@ -8,6 +8,7 @@ import { ratingsRouter } from './routes/ratings';
 import { uploadsRouter } from './routes/uploads';
 import { statsRouter } from './routes/stats';
 import { authRouter } from './routes/auth';
+import { i2iRouter } from './routes/i2i';
 
 type Variables = {};
 
@@ -52,6 +53,7 @@ app.route('/api/ratings', ratingsRouter);
 app.route('/api/uploads', uploadsRouter);
 app.route('/api/stats', statsRouter);
 app.route('/api/auth', authRouter);
+app.route('/api/i2i', i2iRouter);
 
 // 404 處理
 app.notFound((c) => {

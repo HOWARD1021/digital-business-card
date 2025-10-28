@@ -10,12 +10,23 @@ A modern digital business card scanner application with shopping list management
 - 🛒 Comprehensive shopping list management system
 - 📊 CSV export functionality for shopping data
 - 🎨 Modern UI with gradient backgrounds and smooth animations
+- 🖼️ **NEW**: AI-powered Image-to-Image (I2I) transformation
+- 🤖 **NEW**: Iterative image improvement with self-correction loops
+- 🔐 **NEW**: Secure API key management with encryption
+- ☁️ **NEW**: Cloudflare R2 storage integration for image assets
 
 ### Available Routes
 - `/` - Main business card page with flip animation
 - `/shoplist` - Hidden comprehensive shopping list management system (consolidated from previous grocery-list)
 - `/woolworths-receipt` - Woolworths Mt Eden receipt data
 - `/paknsave-receipt` - PAK'nSAVE Royal Oak receipt data
+- `/admin/keys` - **NEW**: Admin interface for AI API key management (password protected)
+
+### API Endpoints
+- `POST /api/i2i/transform` - Transform images using AI with iterative improvement
+- `GET /api/admin/keys/status` - Check API key configuration status
+- `POST /api/admin/keys` - Store/update encrypted API keys (admin only)
+- `GET /api/admin/keys` - Retrieve API key status (admin only)
 
 > **Note:** The `/shoplist` route is a shortened path for the shopping list management system. It's not linked from the business card UI but can be accessed directly.
 
