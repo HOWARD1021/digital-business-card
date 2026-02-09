@@ -1,12 +1,5 @@
 import {
   ApiResponse,
-  ScriptCategory,
-  ScriptTemplate,
-  ScriptRating,
-  ScriptListQuery,
-  CreateScriptTemplateRequest,
-  UpdateScriptTemplateRequest,
-  CreateScriptRatingRequest,
   ImageRecord,
   ImageListQuery,
   ImageStats,
@@ -26,7 +19,7 @@ class ApiClient {
     options: RequestInit = {}
   ): Promise<ApiResponse<T>> {
     const url = `${this.baseUrl}${endpoint}`;
-    
+
     const response = await fetch(url, {
       headers: {
         'Content-Type': 'application/json',
@@ -43,135 +36,6 @@ class ApiClient {
     return response.json();
   }
 
-  // 腳本分類相關
-  async getCategories(): Promise<ScriptCategory[]> {
-    const response = await this.request<ScriptCategory[]>('/scripts/categories');
-    return response.data || [];
-  }
-
-  // 腳本相關
-  async getScripts(query: ScriptListQuery = {}): Promise<{
-    scripts: ScriptTemplate[];
-    pagination?: {
-      page: number;
-      limit: number;
-      total: number;
-      totalPages: number;
-    };
-  }> {
-    const searchParams = new URLSearchParams();
-    
-    Object.entries(query).forEach(([key, value]) => {
-      if (value !== undefined) {
-        searchParams.append(key, value.toString());
-      }
-    });
-
-    const response = await this.request<ScriptTemplate[]>(
-      `/scripts?${searchParams.toString()}`
-    );
-    
-    return {
-      scripts: response.data || [],
-      pagination: response.pagination,
-    };
-  }
-
-  async getScript(id: number): Promise<ScriptTemplate | null> {
-    try {
-      const response = await this.request<ScriptTemplate>(`/scripts/${id}`);
-      return response.data;
-    } catch (error) {
-      console.error('Failed to fetch script:', error);
-      return null;
-    }
-  }
-
-  async createScript(data: CreateScriptTemplateRequest): Promise<ScriptTemplate | null> {
-    try {
-      const response = await this.request<ScriptTemplate>('/scripts', {
-        method: 'POST',
-        body: JSON.stringify(data),
-      });
-      return response.data;
-    } catch (error) {
-      console.error('Failed to create script:', error);
-      return null;
-    }
-  }
-
-  async updateScript(id: number, data: Partial<UpdateScriptTemplateRequest>): Promise<ScriptTemplate | null> {
-    try {
-      const response = await this.request<ScriptTemplate>(`/scripts/${id}`, {
-        method: 'PUT',
-        body: JSON.stringify(data),
-      });
-      return response.data;
-    } catch (error) {
-      console.error('Failed to update script:', error);
-      return null;
-    }
-  }
-
-  async deleteScript(id: number): Promise<boolean> {
-    try {
-      await this.request(`/scripts/${id}`, {
-        method: 'DELETE',
-      });
-      return true;
-    } catch (error) {
-      console.error('Failed to delete script:', error);
-      return false;
-    }
-  }
-
-  async recordScriptCopy(scriptId: number): Promise<void> {
-    try {
-      await this.request(`/scripts/${scriptId}/copy`, {
-        method: 'POST',
-      });
-    } catch (error) {
-      console.error('Failed to record script copy:', error);
-    }
-  }
-
-  // 評分相關
-  async createRating(data: CreateScriptRatingRequest): Promise<ScriptRating | null> {
-    try {
-      const response = await this.request<ScriptRating>('/ratings', {
-        method: 'POST',
-        body: JSON.stringify(data),
-      });
-      return response.data;
-    } catch (error) {
-      console.error('Failed to create rating:', error);
-      return null;
-    }
-  }
-
-  async getScriptRatings(scriptId: number, page = 1, limit = 10): Promise<{
-    ratings: ScriptRating[];
-    pagination?: {
-      page: number;
-      limit: number;
-      total: number;
-      totalPages: number;
-    };
-  }> {
-    try {
-      const response = await this.request<ScriptRating[]>(
-        `/ratings/script/${scriptId}?page=${page}&limit=${limit}`
-      );
-      return {
-        ratings: response.data || [],
-        pagination: response.pagination,
-      };
-    } catch (error) {
-      console.error('Failed to fetch ratings:', error);
-      return { ratings: [] };
-    }
-  }
-
   // 設置用戶 ID
   setUserId(userId: string): void {
     this.userId = userId;
@@ -182,7 +46,7 @@ class ApiClient {
     this.baseUrl = baseUrl;
   }
 
-  // 圖片相關方法
+  // ========== 圖片相關方法 ==========
 
   /**
    * 上傳圖片
@@ -390,6 +254,107 @@ class ApiClient {
   static isValidFileSize(file: File, maxSizeMB = 10): boolean {
     const maxSizeBytes = maxSizeMB * 1024 * 1024;
     return file.size <= maxSizeBytes;
+  }
+
+  // ========== Prompt Gallery 相關方法 ==========
+
+  /**
+   * 獲取 Prompts 列表
+   */
+  async getPrompts(query: {
+    page?: number;
+    limit?: number;
+    category?: string;
+    sort?: 'popular' | 'recent' | 'most_used';
+    user_id?: string;
+  } = {}): Promise<{
+    prompts: any[];
+    pagination?: {
+      page: number;
+      limit: number;
+      total: number;
+      totalPages: number;
+    };
+  }> {
+    const searchParams = new URLSearchParams();
+
+    if (query.page) searchParams.set('page', query.page.toString());
+    if (query.limit) searchParams.set('limit', query.limit.toString());
+    if (query.category) searchParams.set('category', query.category);
+    if (query.sort) searchParams.set('sort', query.sort);
+    if (query.user_id) searchParams.set('user_id', query.user_id);
+
+    const response = await this.request<any[]>(`/prompts?${searchParams.toString()}`);
+
+    return {
+      prompts: response.data || [],
+      pagination: response.pagination,
+    };
+  }
+
+  /**
+   * 獲取單個 Prompt
+   */
+  async getPrompt(id: number): Promise<any> {
+    const response = await this.request<any>(`/prompts/${id}`);
+    if (!response.data) {
+      throw new Error('Prompt not found');
+    }
+    return response.data;
+  }
+
+  /**
+   * 創建新 Prompt
+   */
+  async createPrompt(data: {
+    prompt: string;
+    description?: string;
+    category?: string;
+    image_id?: number;
+  }): Promise<any> {
+    const response = await this.request<any>('/prompts', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+
+    if (!response.data) {
+      throw new Error('Failed to create prompt');
+    }
+
+    return response.data;
+  }
+
+  /**
+   * 收藏/取消收藏 Prompt
+   */
+  async togglePromptFavorite(id: number): Promise<{ is_favorited: boolean }> {
+    const response = await this.request<{ is_favorited: boolean }>(`/prompts/${id}/favorite`, {
+      method: 'POST',
+    });
+
+    if (!response.data) {
+      throw new Error('Failed to toggle favorite');
+    }
+
+    return response.data;
+  }
+
+  /**
+   * 記錄 Prompt 使用
+   */
+  async recordPromptUse(id: number): Promise<void> {
+    await this.request(`/prompts/${id}/use`, {
+      method: 'POST',
+    });
+  }
+
+  /**
+   * 刪除 Prompt
+   */
+  async deletePrompt(id: number): Promise<void> {
+    await this.request(`/prompts/${id}`, {
+      method: 'DELETE',
+    });
   }
 }
 

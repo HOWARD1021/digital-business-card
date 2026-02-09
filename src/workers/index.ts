@@ -3,12 +3,9 @@ import { cors } from 'hono/cors';
 import { zValidator } from '@hono/zod-validator';
 
 import { Env, ApiResponse } from '../types';
-import { scriptsRouter } from './routes/scripts';
-import { ratingsRouter } from './routes/ratings';
 import { uploadsRouter } from './routes/uploads';
-import { statsRouter } from './routes/stats';
-import { authRouter } from './routes/auth';
 import { i2iRouter } from './routes/i2i';
+import { promptsRouter } from './routes/prompts';
 
 type Variables = {};
 
@@ -48,12 +45,9 @@ app.get('/health', (c) => {
 });
 
 // API 路由
-app.route('/api/scripts', scriptsRouter);
-app.route('/api/ratings', ratingsRouter);
 app.route('/api/uploads', uploadsRouter);
-app.route('/api/stats', statsRouter);
-app.route('/api/auth', authRouter);
 app.route('/api/i2i', i2iRouter);
+app.route('/api/prompts', promptsRouter);
 
 // 404 處理
 app.notFound((c) => {

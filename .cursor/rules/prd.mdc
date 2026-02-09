@@ -1,42 +1,27 @@
 ---
-description: 
-globs: 
+description:
+globs:
 alwaysApply: true
 ---
 <!-- cursor-pattern: **/* -->
-# Product Requirements: Digital Business Card Scanner
+# Product Requirements: Digital Business Card
 
 This rule enforces the functional requirements for the Digital Business Card website. All features and implementations must align with the following user stories and expected outcomes:
 
 | Requirement ID | Description | User Story | Expected Behavior/Outcome |
 |----------------|-------------|------------|--------------------------|
-| FR001 | Uploading Business Card Image | As a user, I want to upload a photo of a business card so I can digitize it. | The system should provide an upload interface that accepts image files (JPG, PNG) of business cards. |
-| FR002 | OCR Text Extraction | As a user, I want the system to automatically extract text from my card image. | The system should use OCR to detect and extract text information from the uploaded business card image. |
-| FR003 | Information Categories | As a user, I want the extracted information to be organized into categories (name, phone, email, etc.). | The system should categorize extracted text into predefined fields like name, title, company, phone, email, and address. |
-| FR004 | Editing Extracted Info | As a user, I want to edit the extracted information if there are any errors. | The system should allow users to modify any automatically extracted information before saving. |
-| FR005 | Saving Digital Cards | As a user, I want to save the processed business card to my collection. | The system should store the card image and extracted information in the user's digital card collection. |
-| FR006 | Viewing Card Collection | As a user, I want to view all my saved business cards in one place. | The system should provide a dashboard showing all saved business cards with their key information. |
-| FR007 | Searching Cards | As a user, I want to search through my saved cards using various criteria. | The system should allow searching by name, company, or other fields within the saved cards. |
-| FR008 | Sharing Digital Cards | As a user, I want to share my digital business cards with others. | The system should generate shareable links for individual cards or the entire collection. |
-| FR009 | Exporting Contact Info | As a user, I want to export card information to standard formats (vCard, CSV). | The system should provide export options for contact information in common formats. |
-| FR010 | Card Organization | As a user, I want to organize my cards into groups or categories. | The system should allow creating folders or tags to organize saved business cards. |
-| FR011 | Mobile Compatibility | As a user, I want to capture and process cards directly from my mobile device. | The system should work smoothly on mobile devices with camera integration. |
-| FR012 | Data Privacy | As a user, I want my uploaded card information to be secure and private. | The system should implement proper security measures to protect stored business card data. |
-| FR013 | Card Backside & Social Profile | As a user, I want to flip the business card to see the back, which shows my profile, links, QR code, and social icons. | The system should allow flipping the card to reveal a profile page with avatar, name, description, main links, QR code, and social icons, styled as a modern digital profile card. The QR code button should replace the backside content with a large QR code image. The QR code content (URL) should be user-definable, but is not implemented yet. |
-| FR014 | Comprehensive Shopping List Management | As a user, I want to view and manage all my shopping data (grocery lists, receipts from different stores) in one unified interface. | The system should provide a single page (`/shoplist`) that consolidates all shopping-related data including grocery lists, Woolworths receipts, and PAK'nSAVE receipts. Store names should be clearly distinguished with color-coded tags, and all data should be exportable as CSV. |
-| FR015 | Script Management and Classification | As a user, I want to manage and classify my script templates using a cloud-based system. | The system should provide full CRUD operations for script templates, categorization, version control, and search functionality using Cloudflare Workers + D1 database. |
-| FR016 | Script Generation with AI | As a user, I want to generate customized scripts based on templates and parameters. | The system should integrate AI capabilities to generate script variations, store generation history, and track usage patterns. |
-| FR017 | Image Style Transfer and Management | As a user, I want to generate different style variations of images and manage them efficiently. | The system should process uploaded images, generate style variations using AI/image processing, and store results in R2 storage with proper metadata. |
-| FR018 | Rating and Feedback System | As a user, I want to rate and provide feedback on scripts and generated content. | The system should allow 1-5 star ratings, comments, and aggregate feedback statistics for quality improvement. |
-| FR019 | Usage Analytics and Statistics | As a user, I want to track script usage, generation patterns, and performance metrics. | The system should collect and display analytics on script popularity, generation success rates, and user engagement patterns. |
-| FR020 | Image Storage and Management Dashboard | As a user, I want a modern dashboard to upload, view, search, and manage all my images with statistics. | The system should provide a comprehensive image management interface with drag-and-drop upload, grid/list view, search functionality, batch operations, and detailed statistics. |
-| FR021 | Image-to-Image (I2I) Transformation | As a user, I want to transform images using AI-powered style transfer and artistic filters. | The system should provide I2I transformation capabilities that can convert uploaded images into different artistic styles using Google AI/Imagen APIs with iterative improvement through self-correction loops. |
-| FR022 | AI-Powered Image Description | As a user, I want the system to automatically generate detailed descriptions of my images. | The system should use AI models to analyze uploaded images and generate descriptive text that can be used for accessibility, cataloging, or prompt improvement. |
-| FR023 | Iterative Image Improvement | As a user, I want the system to automatically improve image generation through multiple iterations. | The system should implement a self-correction loop: generate image → describe result → evaluate quality → improve prompt → regenerate, until satisfactory results are achieved. |
-| FR024 | Dual-Model Cost Optimization | As a user, I want the system to optimize costs by using appropriate AI models for different tasks. | The system should use a dual-model approach: expensive paid models for image generation, free models for description and evaluation tasks. |
-| FR025 | Secure API Key Management | As an admin, I want to securely store and manage AI API keys with encryption. | The system should provide an admin interface to store encrypted Google AI API keys, with password-protected access and automatic fallback between primary/secondary keys. |
+| FR001 | Card Backside & Social Profile | As a user, I want to flip the business card to see the back, which shows my profile, links, QR code, and social icons. | The system should allow flipping the card to reveal a profile page with avatar, name, description, main links, QR code, and social icons, styled as a modern digital profile card. The QR code button should replace the backside content with a large QR code image. The QR code content (URL) should be user-definable, but is not implemented yet. |
+| FR002 | Comprehensive Shopping List Management | As a user, I want to view and manage all my shopping data (grocery lists, receipts from different stores) in one unified interface. | The system should provide a single page (`/shoplist`) that consolidates all shopping-related data including grocery lists, Woolworths receipts, and PAK'nSAVE receipts. Store names should be clearly distinguished with color-coded tags, and all data should be exportable as CSV. |
+| FR003 | Image Style Transfer and Management | As a user, I want to generate different style variations of images and manage them efficiently. | The system should process uploaded images, generate style variations using AI/image processing, and store results in R2 storage with proper metadata. |
+| FR004 | Rating and Feedback System | As a user, I want to rate and provide feedback on images and generated content. | The system should allow 1-5 star ratings, comments, and aggregate feedback statistics for quality improvement. |
+| FR005 | Image Storage and Management Dashboard | As a user, I want a modern dashboard to upload, view, search, and manage all my images with statistics. | The system should provide a comprehensive image management interface with drag-and-drop upload, grid/list view, search functionality, batch operations, and detailed statistics. |
+| FR006 | Image-to-Image (I2I) Transformation | As a user, I want to transform images using AI-powered style transfer and artistic filters. | The system should provide I2I transformation capabilities that can convert uploaded images into different artistic styles using Google AI/Imagen APIs with iterative improvement through self-correction loops. |
+| FR007 | AI-Powered Image Description | As a user, I want the system to automatically generate detailed descriptions of my images. | The system should use AI models to analyze uploaded images and generate descriptive text that can be used for accessibility, cataloging, or prompt improvement. |
+| FR008 | Iterative Image Improvement | As a user, I want the system to automatically improve image generation through multiple iterations. | The system should implement a self-correction loop: generate image → describe result → evaluate quality → improve prompt → regenerate, until satisfactory results are achieved. |
+| FR009 | Dual-Model Cost Optimization | As a user, I want the system to optimize costs by using appropriate AI models for different tasks. | The system should use a dual-model approach: expensive paid models for image generation, free models for description and evaluation tasks. |
+| FR010 | Secure API Key Management | As an admin, I want to securely store and manage AI API keys with encryption. | The system should provide an admin interface to store encrypted Google AI API keys, with password-protected access and automatic fallback between primary/secondary keys. |
 
-**Detailed Rules for Card Flip & Backside (FR013):**
+**Detailed Rules for Card Flip & Backside (FR001):**
 - The card must support a 3D flip animation (click or tap to flip between front and back).
 - The backside must include:
   - A circular avatar at the top
@@ -49,11 +34,11 @@ This rule enforces the functional requirements for the Digital Business Card web
 - The QR code should be generated dynamically based on the user's profile or contact link
 - The design should closely match the provided reference image for layout and style
 
-**Detailed Rules for Shopping List Management (FR014):**
+**Detailed Rules for Shopping List Management (FR002):**
 - All shopping data must be consolidated into a single page (`/shoplist`) accessible via direct URL (hidden from business card UI)
 - Store identification must use color-coded tags in the first table column:
   - 🔵 Jadan 超市 (Blue)
-  - 🟢 Woolworths (Green)  
+  - 🟢 Woolworths (Green)
   - 🔴 PAK'nSAVE (Red)
 - Data should include:
   - Original grocery shopping list (19 items from Jadan + Woolworths)
@@ -72,23 +57,7 @@ This rule enforces the functional requirements for the Digital Business Card web
 - Fixed ESLint issues with apostrophes using HTML entities (&apos;)
 - Removed back navigation link from shopping list page for cleaner interface
 
-**Current URL Structure:**
-- `/` - Main business card with flip animation
-- `/shoplist` - Hidden comprehensive shopping list (not linked from UI)
-- `/woolworths-receipt` - Individual Woolworths receipt page  
-- `/paknsave-receipt` - Individual PAK'nSAVE receipt page
-
-**Detailed Rules for Script Management System (FR015-FR019):**
-- All script data must be stored in Cloudflare D1 database with proper indexing
-- API endpoints must follow RESTful conventions with proper error handling
-- Script generation must support template parameters and AI integration
-- Image processing must support multiple style variations (現有 /slideswipe 功能擴展)
-- All generated content must be stored in R2 with metadata tracking
-- Rating system must prevent duplicate ratings per user per script
-- Analytics must track: views, copies, generations, ratings, and usage patterns
-- System must handle file storage efficiently with proper cleanup mechanisms
-
-**Image Style Processing Requirements (FR017):**
+**Image Style Processing Requirements (FR003):**
 - Support multiple image formats (JPG, PNG, WebP)
 - Generate style variations based on existing /slideswipe implementation
 - Store original and processed images in R2 buckets
@@ -96,6 +65,15 @@ This rule enforces the functional requirements for the Digital Business Card web
 - Track processing history and metadata
 - Support batch processing for multiple images
 - Implement proper error handling for processing failures
+
+**Rating and Feedback System Requirements (FR004):**
+- Support 1-5 star ratings for images and generated content
+- Allow users to leave comments and feedback
+- Prevent duplicate ratings per user per image
+- Display aggregate statistics (average rating, total ratings)
+- Show rating distribution (number of 1-star, 2-star, etc.)
+- Support sorting and filtering by rating
+- Store all ratings in D1 database with proper indexing
 
 **API Integration Requirements:**
 - All endpoints must return consistent JSON responses with success/error status
@@ -106,7 +84,7 @@ This rule enforces the functional requirements for the Digital Business Card web
 - Implement proper caching strategies using KV store
 - Follow Cloudflare Workers best practices for performance
 
-**Detailed Rules for I2I (Image-to-Image) System (FR021-FR025):**
+**Detailed Rules for I2I (Image-to-Image) System (FR006-FR010):**
 - I2I transformation must support multiple image formats (JPG, PNG, WebP)
 - System must implement iterative improvement loop with configurable max iterations (default: 3)
 - Image generation must use Google Imagen API with fallback mechanisms
@@ -139,15 +117,18 @@ This rule enforces the functional requirements for the Digital Business Card web
 7. Store final result in R2 and metadata in D1
 8. Return transformed image URL and processing details
 
-**Current URL Structure (Updated):**
+**Current URL Structure:**
 - `/` - Main business card with flip animation
-- `/script` - Script management interface (integrates with Cloudflare API)
 - `/slideswipe` - Image style processing interface
 - `/shoplist` - Hidden comprehensive shopping list (not linked from UI)
 - `/dashboard` - Modern image management dashboard with upload, view, and statistics
 - `/admin/keys` - Admin interface for API key management (password protected)
+- `/shorts` - Shorts content page
+
+**API Endpoints:**
+- `/api/uploads/*` - Image upload and management endpoints
 - `/api/i2i/*` - I2I transformation API endpoints
 - `/api/admin/*` - Admin API endpoints
-- `/api/*` - Other Cloudflare Workers API endpoints
+- `/api/ratings/*` - Rating and feedback endpoints
 
 **All implementations must fulfill these requirements. If a feature or code does not align with these, it should be revised.**
