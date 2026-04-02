@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { QrCode, Briefcase, Youtube, BookOpen, Linkedin, Instagram, MessageCircle } from "lucide-react";
+import { QrCode, Briefcase, Youtube, Twitter, Linkedin, Instagram, MessageCircle } from "lucide-react";
 import Image from "next/image";
 
 // 型別定義
@@ -11,7 +11,7 @@ interface SocialLinks {
   instagram: string;
   whatsapp: string;
   portfolio: string;
-  blog: string;
+  twitter: string;
 }
 
 interface ProfileInfo {
@@ -28,12 +28,12 @@ const defaultProfile: ProfileInfo = {
   title: "Invert, always invert.",
   avatar: "/portfolio.jpeg",
   socialLinks: {
-    youtube: "https://www.youtube.com/@QQ-ms6sx",
+    youtube: "https://www.youtube.com/@deepomodoro",
     linkedin: "https://www.linkedin.com/in/%E8%BB%92%E8%B1%AA-%E8%83%A1-897713180/",
     instagram: "https://www.instagram.com/d_arwin/",
     whatsapp: "https://wa.me/your-number",
     portfolio: "https://howard1021.github.io/HowsCoding/",
-    blog: "https://your-blog.com"
+    twitter: "https://x.com/ms04626730"
   },
   qrCodeUrl: "https://www.teamtaiwan.win/"
 };
@@ -99,15 +99,15 @@ export const CardFlip = () => {
                         <span>YouTube Channel</span>
                       </a>
                       <a 
-                        href={profile.socialLinks.blog} 
+                        href={profile.socialLinks.twitter} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="w-full py-3 bg-white/90 hover:bg-white rounded-md font-medium text-gray-700
                           shadow-sm transition-all duration-300 hover:shadow-md hover:translate-y-[-2px]
                           flex items-center justify-center gap-2"
                       >
-                        <BookOpen size={18} />
-                        <span>Blog</span>
+                        <Twitter size={18} />
+                        <span>Twitter</span>
                       </a>
                     </div>
 
