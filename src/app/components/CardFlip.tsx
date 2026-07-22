@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { QrCode, Briefcase, Youtube, Twitter, Linkedin, Instagram, MessageCircle } from "lucide-react";
+import { QrCode, Briefcase, Youtube, Twitter, BookOpen, Linkedin, Instagram, MessageCircle } from "lucide-react";
 import Image from "next/image";
 
 // 型別定義
@@ -12,6 +12,7 @@ interface SocialLinks {
   whatsapp: string;
   portfolio: string;
   twitter: string;
+  blog: string;
 }
 
 interface ProfileInfo {
@@ -33,7 +34,8 @@ const defaultProfile: ProfileInfo = {
     instagram: "https://www.instagram.com/d_arwin/",
     whatsapp: "https://wa.me/your-number",
     portfolio: "https://howard1021.github.io/HowsCoding/",
-    twitter: "https://x.com/ms04626730"
+    twitter: "https://x.com/ms04626730",
+    blog: "https://gooaye.teamtaiwan.win/"
   },
   qrCodeUrl: "https://www.teamtaiwan.win/"
 };
@@ -108,6 +110,17 @@ export const CardFlip = () => {
                       >
                         <Twitter size={18} />
                         <span>Twitter</span>
+                      </a>
+                      <a
+                        href={profile.socialLinks.blog}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full py-3 bg-white/90 hover:bg-white rounded-md font-medium text-gray-700
+                          shadow-sm transition-all duration-300 hover:shadow-md hover:translate-y-[-2px]
+                          flex items-center justify-center gap-2"
+                      >
+                        <BookOpen size={18} />
+                        <span>Blog</span>
                       </a>
                     </div>
 
