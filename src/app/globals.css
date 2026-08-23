@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-sand: #f6f0e4;
+    --bg-cream: #fbf7ee;
+    --bg-hero: #f0ae43;
+    --text-main: #25211e;
+    --text-muted: #665b52;
+    --color-terra: #a83d2a;
+    --color-terra-hover: #8f3423;
+    --color-forest: #23463a;
+    --color-forest-hover: #1a362c;
+    --color-ochre: #d9932b;
+    --color-ocean: #2b4d77;
+  }
+
+  body {
+    background-color: var(--bg-sand);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Serif TC", "PingFang TC", "Songti SC", "STSong", "Noto Sans TC", "Microsoft JhengHei", serif;
+  }
+
+  /* Custom serif heading font */
+  .font-serif-tw {
+    font-family: "Noto Serif TC", "Songti SC", "STSong", "Source Han Serif TC", Georgia, serif;
+  }
+}
+
+/* Texture overlay for authentic craft paper look */
+.paper-texture {
+  background-image: radial-gradient(rgba(200, 160, 100, 0.12) 1px, transparent 1px);
+  background-size: 20px 20px;
+}

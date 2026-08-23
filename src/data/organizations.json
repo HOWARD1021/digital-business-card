@@ -1,0 +1,2433 @@
+[
+  {
+    "id": 1,
+    "name": "財團法人中華啟能基金會",
+    "shortName": "中華啟能基金會（春暉啟能中心）",
+    "region": "北部",
+    "city": "新北市",
+    "district": "三峽區",
+    "address": "新北市三峽區大埔路141號",
+    "phone": "(02)2671-3001轉2209",
+    "website": "https://www.spris.org.tw/",
+    "category": "手作烘焙 & 園藝工藝",
+    "targetGroup": "心智障礙者、多重障礙者",
+    "featuredProducts": [
+      {
+        "name": "春暉手作手工餅乾禮盒",
+        "desc": "嚴選天然奶油與在地堅果，學員細心揉捏烘烤，香濃純粹。"
+      },
+      {
+        "name": "陶藝與植栽手作盆器",
+        "desc": "身障學員透過陶藝陶冶心靈，獨一無二的溫暖手捏手感陶。"
+      }
+    ],
+    "story": "中華啟能基金會深耕身心障礙者支持服務數十年，轄下「春暉啟能中心」坐落於三峽青山綠水間。透過多元職業陶冶、烘焙工作坊與生活自立訓練，陪伴心智障礙學員發掘自我潛能，用專注與純粹的心，創造出溫暖日常的良品。",
+    "badges": [
+      "庇護職培",
+      "三峽在地",
+      "純手工烘焙",
+      "ESG企業首選"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "春暉工坊",
+    "logoText": "春暉",
+    "logoTheme": "green",
+    "brandTag": "日常器物",
+    "productTag": "手捏陶藝/餅乾",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "name": "財團法人中華民國唐氏症基金會",
+    "shortName": "唐氏症基金會（愛不囉嗦庇護工場）",
+    "region": "北部",
+    "city": "新北市",
+    "district": "三重區/新莊區",
+    "address": "新北市三重區重新路五段609巷14號2樓之1",
+    "phone": "(02)2278-9321#246",
+    "website": "https://www.rocdown-syndrome.org.tw/",
+    "category": "手作烘焙 & 節慶禮盒",
+    "targetGroup": "唐氏症與心智障礙者",
+    "featuredProducts": [
+      {
+        "name": "愛不囉嗦 手工餅乾綜合禮盒",
+        "desc": "唐寶寶21道嚴謹工序，無添加人工防腐劑，酥脆可口。"
+      },
+      {
+        "name": "在地小農契作麵條/米禮盒",
+        "desc": "結合台灣在地優質小農，支持友善農作與庇護就業雙重良善循環。"
+      }
+    ],
+    "story": "唐氏症基金會創立品牌「愛不囉嗦 ABRAZO」（西班牙語擁抱之意），給予唐寶寶與身心障礙者就業支持與自立舞台。他們用加倍的認真與21道堅持工法，將滿滿的真誠烘焙成一口口酥脆美味，傳遞最單純的愛。",
+    "badges": [
+      "庇護工場",
+      "愛不囉嗦品牌",
+      "三節伴手禮首選",
+      "友善小農合作"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "愛不囉嗦 ABRAZO",
+    "logoText": "愛不\n囉嗦",
+    "logoTheme": "terra",
+    "brandTag": "手作烘焙",
+    "productTag": "手工餅乾/米禮",
+    "image": "/images/organizations/org-2.jpg",
+    "verified": true,
+    "imageSource": "https://www.rocdown-syndrome.org.tw/upload/20260821231128mdnaf1.jpg",
+    "imageDimensions": {
+      "width": 5904,
+      "height": 2250
+    }
+  },
+  {
+    "id": 3,
+    "name": "新北市喜憨兒庇護工場",
+    "shortName": "喜憨兒庇護工場（新北）",
+    "region": "北部",
+    "city": "新北市",
+    "district": "中和區",
+    "address": "新北市中和區民享街4號E棟",
+    "phone": "(02)8221-7676#111",
+    "website": "https://www.c-are-us.org.tw/",
+    "category": "手作烘焙 & 節慶西點",
+    "targetGroup": "心智障礙者（喜憨兒）",
+    "featuredProducts": [
+      {
+        "name": "喜憨兒經典烘焙餅乾/喜餅禮盒",
+        "desc": "法式手作烘焙、金賞鳳梨酥與彌月/喜慶專屬禮盒。"
+      },
+      {
+        "name": "冷凍精緻熟食餐包",
+        "desc": "安全衛生中央廚房製作，營養美味輕鬆上桌。"
+      }
+    ],
+    "story": "喜憨兒基金會從一張烘焙工作桌開始，翻轉大眾對身障者的刻板印象。新北市喜憨兒庇護工場讓憨兒從被照顧者蛻變為自食其力的專業烘焙師傅，堅持高標準食品衛生與純淨用料，讓每份烘焙都帶著自信微笑。",
+    "badges": [
+      "庇護工場",
+      "喜餅彌月首選",
+      "ISO22000/HACCP認證",
+      "ESG公益採購"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "喜憨兒烘焙工場",
+    "logoText": "喜憨兒",
+    "logoTheme": "beige",
+    "brandTag": "手作烘焙",
+    "productTag": "法式烘焙/喜餅",
+    "image": "/images/organizations/org-3.jpg",
+    "verified": true,
+    "imageSource": "https://www.c-are-us.org.tw/sites/default/files/upload/slider/%E9%A6%96%E9%A0%81Banner_%E4%B8%AD%E7%A7%8B%E9%80%81%E6%84%9B_%E9%9B%BB%E8%85%A6%E7%89%88%20%281%29.jpg",
+    "imageDimensions": {
+      "width": 1920,
+      "height": 1010
+    }
+  },
+  {
+    "id": 4,
+    "name": "財團法人台北市自閉兒社會福利基金會附設愛肯樂活工場",
+    "shortName": "愛肯樂活工場 (ICAN)",
+    "region": "北部",
+    "city": "臺北市",
+    "district": "大同區",
+    "address": "臺北市大同區重慶北路三段335巷43號",
+    "phone": "(02)2599-3803#18",
+    "website": "http://www.ican.org.tw/",
+    "category": "在地風味 & 手工養生饅頭烘焙",
+    "targetGroup": "自閉症成人（肯納星兒）",
+    "featuredProducts": [
+      {
+        "name": "手工養生鮮奶饅頭/包子",
+        "desc": "老麵天然發酵、不添加修飾澱粉，星兒細心揉擀，彈牙扎實。"
+      },
+      {
+        "name": "手工土鳳梨酥/綜合堅果禮盒",
+        "desc": "嚴選台灣在地土鳳梨餡，酸甜適中，餅皮金黃酥香。"
+      }
+    ],
+    "story": "「愛肯（I CAN）」象徵星兒們堅定說出『我可以』的自信！自閉症青年擁有對細節高度專注的特質，愛肯樂活工場將這份特質化為精準揉麵與烘焙技藝，堅持真材實料，打造出令人安心口齒留香的養生佳品。",
+    "badges": [
+      "庇護工場",
+      "老麵手工饅頭",
+      "無人工添加物",
+      "星兒專注良品"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "愛肯樂活 ICAN",
+    "logoText": "愛肯\nICAN",
+    "logoTheme": "green",
+    "brandTag": "在地風味",
+    "productTag": "老麵養生饅頭",
+    "image": "/images/organizations/org-4.jpg",
+    "verified": true,
+    "imageSource": "https://www.ican.org.tw/upload/{639083229814802550}_25.jpg",
+    "imageDimensions": {
+      "width": 2048,
+      "height": 1536
+    }
+  },
+  {
+    "id": 5,
+    "name": "社團法人中華善愛社福協會",
+    "shortName": "中華善愛社福協會",
+    "region": "北部",
+    "city": "新北市",
+    "district": "板橋區",
+    "address": "新北市板橋區中正路106號",
+    "phone": "(02)2966-2058",
+    "website": "https://sanlove.sino1.com.tw/",
+    "category": "生活良品 & 文創工藝",
+    "targetGroup": "弱勢身心障礙家庭、社區長者與兒少",
+    "featuredProducts": [
+      {
+        "name": "善愛暖心手作香氛皂",
+        "desc": "植物油脂低溫冷製，溫和親膚，融入自然草本香氣。"
+      },
+      {
+        "name": "手作布藝生活提袋",
+        "desc": "在地媽媽與身障學員車縫，結實耐用且具樸質文創美感。"
+      }
+    ],
+    "story": "中華善愛社福協會致力於連結社區資源，推動身心障礙者與弱勢家庭技能培力。透過手作工坊與社區關懷據點，讓身障學員在創作中找到自信，將愛與善念融入生活日常小物中。",
+    "badges": [
+      "社區培力",
+      "天然手工皂",
+      "綠色生活",
+      "愛心回饋"
+    ],
+    "heroCategory": "島嶼織品",
+    "brandTitle": "善愛手作工坊",
+    "logoText": "善愛",
+    "logoTheme": "beige",
+    "brandTag": "日常器物",
+    "productTag": "冷製手工皂/布包",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 6,
+    "name": "財團法人天主教光仁社會福利基金會附設臺北市私立育仁啟能中心",
+    "shortName": "育仁啟能中心（光仁社福）",
+    "region": "北部",
+    "city": "臺北市",
+    "district": "萬華區",
+    "address": "臺北市萬華區萬大路22號2樓",
+    "phone": "(02)2382-1090#12",
+    "website": "https://www.kjswf.org.tw/",
+    "category": "手作烘焙 & 生活陶藝",
+    "targetGroup": "成年心智障礙及多重障礙者",
+    "featuredProducts": [
+      {
+        "name": "育仁手作香脆手工餅乾",
+        "desc": "經典伯爵紅茶、美式巧克力豆、蔓越莓燕麥多款風味。"
+      },
+      {
+        "name": "手作陶藝杯盤生活選物",
+        "desc": "學員親手拉坯上釉，質樸溫暖的手作質感生活器皿。"
+      }
+    ],
+    "story": "光仁育仁啟能中心傳承天主教博愛精神，在台北萬華深耕身心障礙日間服務與職能訓練。透過陶藝、烘焙與代工輔導，陪伴慢飛天使一步一腳印學習工作自立，產出的每一件作品都凝聚著耐心與專注。",
+    "badges": [
+      "職能培力",
+      "手作陶藝器物",
+      "溫暖烘焙",
+      "台北老字號社福"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "育仁陶藝工坊",
+    "logoText": "育仁\n陶藝",
+    "logoTheme": "slate",
+    "brandTag": "日常器物",
+    "productTag": "生活陶瓷餐具",
+    "image": "/images/organizations/org-6.jpg",
+    "verified": true,
+    "imageSource": "https://www.kjswf.org.tw/upload/{639226403570869435}_LINE_ALBUM_2026818_260818_2.jpg",
+    "imageDimensions": {
+      "width": 1280,
+      "height": 960
+    }
+  },
+  {
+    "id": 7,
+    "name": "財團法人臺北市小愉兒社會福利基金會",
+    "shortName": "小愉兒社會福利基金會（熊米屋）",
+    "region": "北部",
+    "city": "基隆市/臺北市",
+    "district": "仁愛區/大安區",
+    "address": "基隆市仁愛區孝二路39號3樓 / 臺北市服務處",
+    "phone": "(02)2422-0310",
+    "website": "https://papid.com.tw/",
+    "category": "手作烘焙 & 節慶伴手禮",
+    "targetGroup": "心智障礙者（小愉兒）",
+    "featuredProducts": [
+      {
+        "name": "熊米屋 手工餅乾鐵盒/提盒",
+        "desc": "在街頭巷尾充滿元氣叫賣的愛心餅乾，每一片都無香精純手作。"
+      },
+      {
+        "name": "小愉兒中秋/年節伴手禮盒",
+        "desc": "招牌蛋黃酥、鳳梨酥與手工曲奇，節慶送禮最溫暖的選擇。"
+      }
+    ],
+    "story": "「大哥哥、大姊姊，請買一包手工餅乾！」你在街頭一定聽過小愉兒充滿活力的問候。熊米屋由一群心智障礙者的父母創立，建立庇護工場與小愉兒家園，讓孩子能做出一手好餅乾，靠自己的力量快樂生活、有尊嚴地長大。",
+    "badges": [
+      "熊米屋品牌",
+      "基隆在地",
+      "街頭熱銷",
+      "純手工健康烘焙"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "熊米屋 Papid",
+    "logoText": "熊米屋",
+    "logoTheme": "terra",
+    "brandTag": "手作烘焙",
+    "productTag": "招牌手工餅乾",
+    "image": "/images/organizations/org-7.png",
+    "verified": true,
+    "imageSource": "https://papid.com.tw/wp-content/uploads/2025/07/BH_250518.png",
+    "imageDimensions": {
+      "width": 1200,
+      "height": 1200
+    }
+  },
+  {
+    "id": 8,
+    "name": "財團法人育成社會福利基金會事業部",
+    "shortName": "育成社福基金會（育成庇護工場）",
+    "region": "北部",
+    "city": "臺北市/新北市",
+    "district": "大安區/五股區",
+    "address": "臺北市大安區建國南路一段319號2樓",
+    "phone": "(02)2705-2588#27",
+    "website": "https://ycswf.org.tw/",
+    "category": "在地風味 & 洗沐清潔與禮盒",
+    "targetGroup": "心智障礙者、自閉症及多重障礙者",
+    "featuredProducts": [
+      {
+        "name": "育成天然草本手工皂與洗沐禮盒",
+        "desc": "植物性溫和配方，搭配學員細心切皂、包裝，送禮實用首選。"
+      },
+      {
+        "name": "育成精選濾掛咖啡與在地茶點",
+        "desc": "嚴選國際莊園咖啡豆與台灣在地優質好茶。"
+      }
+    ],
+    "story": "育成基金會創立超過30年，陪伴上萬個心智障礙家庭。事業部旗下設立多所庇護工場與愛心商品產線，提供庇護就業、天然手工皂製程、包裝代工與文創研發，讓憨兒發揮無限可能，展現島嶼職人精神。",
+    "badges": [
+      "大型公益機構",
+      "天然手工皂",
+      "ESG企業合作",
+      "全方位庇護服務"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "育成社福良品",
+    "logoText": "育成\n社福",
+    "logoTheme": "green",
+    "brandTag": "日常器物",
+    "productTag": "草本手工皂/洗沐",
+    "image": "/images/organizations/org-8.jpg",
+    "verified": true,
+    "imageSource": "https://www.ycswf.org.tw/upload/20260715143409evwrg1.jpg",
+    "imageDimensions": {
+      "width": 1440,
+      "height": 550
+    }
+  },
+  {
+    "id": 9,
+    "name": "糕菲庇護工廠",
+    "shortName": "糕菲庇護工場 (Gofe)",
+    "region": "北部",
+    "city": "臺北市",
+    "district": "南港區",
+    "address": "臺北市南港區成功路一段30號",
+    "phone": "(02)2785-2499轉9",
+    "website": "https://www.gofe.com.tw/",
+    "category": "手作烘焙 & 濾掛莊園咖啡",
+    "targetGroup": "心智障礙及精神康復者",
+    "featuredProducts": [
+      {
+        "name": "糕菲頂級手工蛋捲禮盒",
+        "desc": "厚實多層次、奶香濃郁且無添加防腐劑，人氣爆棚的招牌蛋捲。"
+      },
+      {
+        "name": "嚴選莊園精品濾掛咖啡包",
+        "desc": "專業烘豆師調配，學員細心研磨封裝，香醇順口。"
+      }
+    ],
+    "story": "糕菲（Gofe）意即「God Offers Free Enjoyment」，座落於台北南港。工場以製作高品質手工蛋捲、西點烘焙與精品咖啡聞名，為身心障礙朋友打造友善就業環境，讓每一口酥脆蛋捲都蘊含對生活的無限熱忱。",
+    "badges": [
+      "台北庇護工場",
+      "招牌厚蛋捲",
+      "莊園精品咖啡",
+      "節慶排隊名店"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "糕菲 Gofe",
+    "logoText": "糕菲\nGOFE",
+    "logoTheme": "ochre",
+    "brandTag": "手作烘焙",
+    "productTag": "手工厚蛋捲/咖啡",
+    "image": "/images/organizations/org-9.jpg",
+    "verified": true,
+    "imageSource": "https://www.gofe.com.tw/Upload/1120915245/ad/6504113ff059b.jpg",
+    "imageDimensions": {
+      "width": 3319,
+      "height": 1263
+    }
+  },
+  {
+    "id": 10,
+    "name": "社團法人基隆市聾啞福利協進會附設勵聲美饕",
+    "shortName": "勵聲美饕（基隆市聾啞福利協進會）",
+    "region": "北部",
+    "city": "基隆市",
+    "district": "中正區",
+    "address": "基隆市中正區中正路102號",
+    "phone": "(02)2429-1433",
+    "website": "https://www.facebook.com/klhearing/",
+    "category": "在地風味 & 港都特色美食",
+    "targetGroup": "聽語障人士",
+    "featuredProducts": [
+      {
+        "name": "港都手工海味/肉品熟食料理包",
+        "desc": "融合基隆在地海鮮與傳統家常手藝，真材實料加熱即享。"
+      },
+      {
+        "name": "特色手工中式點心/節慶伴手",
+        "desc": "聽障師傅靜心專注製作，手工扎實美味。"
+      }
+    ],
+    "story": "勵聲美饕是由基隆市聾啞福利協進會打造的自立品牌。無聲的世界裡，聽障朋友用敏銳的雙手與無比專注的眼神，淬鍊出純粹美味的港都料理與手作點心，用美味打破溝通的界線。",
+    "badges": [
+      "聽語障職培",
+      "基隆海港特色",
+      "無聲職人",
+      "手作在地好物"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "勵聲美饕",
+    "logoText": "勵聲\n美饕",
+    "logoTheme": "navy",
+    "brandTag": "在地風味",
+    "productTag": "港都特色海味",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 11,
+    "name": "財團法人伊甸社會福利基金會附設伊甸烘焙咖啡屋",
+    "shortName": "伊甸烘焙咖啡屋（桃園）",
+    "region": "北部",
+    "city": "桃園市",
+    "district": "中壢區",
+    "address": "桃園市中壢區中豐北路一段63號",
+    "phone": "(03)4278229轉101",
+    "website": "https://eden.org.tw/",
+    "category": "手作烘焙 & 節慶精緻禮盒",
+    "targetGroup": "各類身心障礙朋友",
+    "featuredProducts": [
+      {
+        "name": "伊甸金賞蛋黃酥/鳳梨酥禮盒",
+        "desc": "傳統古法烘焙，外皮金黃層次分明，內餡綿密不甜膩。"
+      },
+      {
+        "name": "太妃堅果塔與綜合手工餅乾",
+        "desc": "多種堅果慢火烘烤，淋上特調太妃焦糖，香脆療癒。"
+      }
+    ],
+    "story": "伊甸基金會長年服務身心障礙者，「伊甸烘焙咖啡屋」位於桃園中壢，通過嚴謹衛生認證。專業就服員一對一耐心引導，讓身障學員熟練掌握秤重、揉麵、烘烤與包裝，每到中秋春節皆是各大企業指名採購的愛心首選。",
+    "badges": [
+      "伊甸品牌",
+      "桃園庇護工場",
+      "金賞糕餅",
+      "企業ESG大宗採購"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "伊甸烘焙咖啡屋",
+    "logoText": "伊甸\n烘焙",
+    "logoTheme": "green",
+    "brandTag": "手作烘焙",
+    "productTag": "金賞蛋黃酥/鳳梨酥",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 12,
+    "name": "財團法人桃園市私立觀音愛心家園",
+    "shortName": "觀音愛心家園（烘焙工場）",
+    "region": "北部",
+    "city": "桃園市",
+    "district": "觀音區",
+    "address": "桃園市觀音區成功路一段250號",
+    "phone": "(03)483-3820",
+    "website": "https://www.kindgarden.org.tw/",
+    "category": "手作烘焙 & 經典蛋糕西點",
+    "targetGroup": "身心障礙者與多重障礙院生",
+    "featuredProducts": [
+      {
+        "name": "觀音愛心 紐約重乳酪蛋糕",
+        "desc": "網路超人氣熱銷冠軍！採用頂級奶油乳酪，香濃醇厚不加一滴水。"
+      },
+      {
+        "name": "瑞士巧克力/北海道生乳蛋糕捲",
+        "desc": "綿密蛋糕體搭配特製清爽生乳鮮奶油，回購率極高。"
+      }
+    ],
+    "story": "座落於桃園觀音海邊的愛心家園，以「超水準重乳酪蛋糕」名震全台！家園烘焙坊聘請專業西點主廚指導身障憨兒，不計成本使用頂級原料，靠過硬品質與極佳口碑贏得消費者熱愛，讓憨兒靠實力贏得掌聲。",
+    "badges": [
+      "網路團購名店",
+      "頂級重乳酪蛋糕",
+      "自力更生典範",
+      "無香精防腐劑"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "觀音愛心家園",
+    "logoText": "觀音\n愛心",
+    "logoTheme": "terra",
+    "brandTag": "手作烘焙",
+    "productTag": "紐約重乳酪蛋糕",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 13,
+    "name": "財團法人桃園市私立路得啟智學園",
+    "shortName": "路得啟智學園",
+    "region": "北部",
+    "city": "桃園市",
+    "district": "八德區/觀音區",
+    "address": "桃園市八德區長興路1138號",
+    "phone": "(03)498-0096#115",
+    "website": "https://ruth.eoffering.org.tw/",
+    "category": "在地風味 & 友善農耕手作",
+    "targetGroup": "重度與極重度心智障礙者",
+    "featuredProducts": [
+      {
+        "name": "路得手作純釀果醋/酵素",
+        "desc": "自栽或在地無毒鮮果慢火長時自然發酵，溫潤順喉。"
+      },
+      {
+        "name": "自然農法有機香草茶包",
+        "desc": "學員親手澆水、除草、採摘烘乾的療癒花草茶。"
+      }
+    ],
+    "story": "路得啟智學園秉持基督之愛，為重度心智障礙者打造充滿綠意的自立家園。透過園藝治療、無毒香草植栽與果醋釀造，讓學員在大自然土地中療癒身心，培育出一瓶瓶純天然的大地恩賜。",
+    "badges": [
+      "園藝輔療",
+      "自然農法無毒",
+      "天然果醋茶包",
+      "綠色永續"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "路得香草工坊",
+    "logoText": "路得",
+    "logoTheme": "green",
+    "brandTag": "在地風味",
+    "productTag": "天然果醋/花草茶",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 14,
+    "name": "財團法人桃園市私立心燈啟智教養院",
+    "shortName": "心燈啟智教養院",
+    "region": "北部",
+    "city": "桃園市",
+    "district": "觀音區",
+    "address": "桃園市觀音區草漯里莊敬路100號",
+    "phone": "(03)420-5558#116",
+    "website": "https://heartlight.eoffering.org.tw/",
+    "category": "手作烘焙 & 園藝工藝",
+    "targetGroup": "中重度智能障礙者",
+    "featuredProducts": [
+      {
+        "name": "心燈手工烘焙米餅/餅乾",
+        "desc": "結合在地好米與天然穀物，少糖低油健康配方。"
+      },
+      {
+        "name": "手作多肉植物盆栽與陶作",
+        "desc": "學員親手照料的多肉盆景，療癒辦公桌首選。"
+      }
+    ],
+    "story": "點一盞心燈，照亮慢飛天使的前路。心燈教養院在桃園觀音用心陪伴智障青年生活自立，開設烘焙班與綠生活園藝班，讓學員在慢步調中學習專注與自信，用溫暖好物點亮社會。",
+    "badges": [
+      "健康穀物烘焙",
+      "多肉綠植手作",
+      "生活自立培力",
+      "溫暖關懷"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "心燈工坊",
+    "logoText": "心燈",
+    "logoTheme": "beige",
+    "brandTag": "日常器物",
+    "productTag": "健康米餅/多肉盆器",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 15,
+    "name": "衛生福利部桃園療養院附設樂桃桃咖啡簡餐坊",
+    "shortName": "樂桃桃咖啡簡餐坊（部桃療）",
+    "region": "北部",
+    "city": "桃園市",
+    "district": "桃園區",
+    "address": "桃園市桃園區龍壽街71號",
+    "phone": "(03)369-8553#2633",
+    "website": "https://www.typc.mohw.gov.tw/",
+    "category": "在地風味 & 特色烘焙簡餐",
+    "targetGroup": "精神障礙康復者",
+    "featuredProducts": [
+      {
+        "name": "樂桃桃手工低糖核桃糕/牛軋糖",
+        "desc": "嚴選優質海藻糖與滿滿香脆堅果，軟Q不黏牙。"
+      },
+      {
+        "name": "手作現烤西點與冷萃咖啡",
+        "desc": "康復學員受過專業吧檯訓練，香醇現萃。"
+      }
+    ],
+    "story": "樂桃桃咖啡坊是衛福部桃園療養院建立的庇護工場，致力於精神康復者的職業重建。透過餐飲吧檯服務與精緻手作點心，幫助學員一步步融入職場、重獲自信，感受人與人之間的美好互動。",
+    "badges": [
+      "公立庇護工場",
+      "精神職業重建",
+      "減糖低負擔",
+      "手作核桃糕"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "樂桃桃咖啡簡餐",
+    "logoText": "樂桃桃",
+    "logoTheme": "terra",
+    "brandTag": "在地風味",
+    "productTag": "低糖核桃糕/牛軋糖",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 16,
+    "name": "財團法人台灣省私立香園紀念教養院",
+    "shortName": "香園紀念教養院（香園快樂農場）",
+    "region": "北部",
+    "city": "新竹縣",
+    "district": "湖口鄉/新豐鄉",
+    "address": "新竹縣湖口鄉中興村二鄰18號",
+    "phone": "(03)5690951轉118",
+    "website": "https://www.hy.org.tw/",
+    "category": "在地風味 & 友善農產烘焙",
+    "targetGroup": "心智障礙者",
+    "featuredProducts": [
+      {
+        "name": "香園快樂放牧人道雞蛋",
+        "desc": "院生細心照料的放牧土雞，蛋黃飽滿立體、無抗生素殘留。"
+      },
+      {
+        "name": "香園放牧雞蛋手工蛋捲",
+        "desc": "100%使用自家新鮮放牧蛋製作，蛋香濃郁、酥脆無比。"
+      }
+    ],
+    "story": "新竹香園教養院推動「農場職培」模式，開闢香園快樂農場。心智障礙學員擔任快樂養雞員與農夫，撿蛋、餵飼、烘捲一手包辦，用純天然的在地放牧農產，帶給消費者最純粹的健康滋味。",
+    "badges": [
+      "人道放牧雞蛋",
+      "天然手工蛋捲",
+      "綠色農場職培",
+      "新竹在地好物"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "香園快樂農場",
+    "logoText": "香園\n農場",
+    "logoTheme": "green",
+    "brandTag": "在地風味",
+    "productTag": "放牧人道蛋/蛋捲",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 17,
+    "name": "幼安歡喜兒咖啡屋",
+    "shortName": "幼安歡喜兒咖啡屋（幼安教養院）",
+    "region": "中部",
+    "city": "苗栗縣",
+    "district": "苗栗市",
+    "address": "苗栗縣苗栗市新英里1鄰新英10號",
+    "phone": "(03)733-8180",
+    "website": "https://www.youan.org.tw/",
+    "category": "手作烘焙 & 在地客庄茶點",
+    "targetGroup": "身心障礙者、發展遲緩兒少",
+    "featuredProducts": [
+      {
+        "name": "歡喜兒客家擂茶餅乾/月餅",
+        "desc": "融合苗栗在地客家擂茶香氣，穀香濃郁、清爽甘甜。"
+      },
+      {
+        "name": "手工鳳梨酥與曲奇禮盒",
+        "desc": "在地優質食材製作，送禮暖心有面子。"
+      }
+    ],
+    "story": "苗栗幼安教養院陪伴弱勢身障家庭超過30載，「歡喜兒咖啡屋」是學員展現自立才能的溫馨天地。結合苗栗客家在地特色，推出擂茶餅乾與手工糕點，讓每一位支持者品嚐到客庄的質樸與深情。",
+    "badges": [
+      "苗栗客庄特色",
+      "客家擂茶餅乾",
+      "歡喜兒自立",
+      "伴手禮首選"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "幼安歡喜兒",
+    "logoText": "幼安\n歡喜",
+    "logoTheme": "ochre",
+    "brandTag": "手作烘焙",
+    "productTag": "客家擂茶餅乾",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 18,
+    "name": "財團法人瑪利亞社會福利基金會",
+    "shortName": "瑪利亞基金會（瑪利媽媽庇護工場）",
+    "region": "中部",
+    "city": "臺中市",
+    "district": "南屯區/北區",
+    "address": "臺中市南屯區柳川東路二段73號",
+    "phone": "04-2471-3535轉1403",
+    "website": "https://www.maria.org.tw/",
+    "category": "手作烘焙 & 精品烘焙清潔服務",
+    "targetGroup": "心智障礙及重度障礙青年",
+    "featuredProducts": [
+      {
+        "name": "瑪利媽媽手作低糖手工麵包/餅乾",
+        "desc": "日本進口麵粉與天然發酵奶油，健康美味無負擔。"
+      },
+      {
+        "name": "快樂襪（Happy Socks 公益襪）",
+        "desc": "心智障礙青年天馬行空的純真畫作轉化為時尚棉襪，爆紅全台！"
+      }
+    ],
+    "story": "瑪利亞基金會秉持「愛永遠在」的信念，是台灣指標性身障社福機構。旗下「瑪利媽媽庇護工場」與「Merry Young 快樂襪」品牌，將身障青年的繪畫藝術才華轉化為國際級文創商品，感動無數企業與消費者。",
+    "badges": [
+      "指標公益品牌",
+      "MerryYoung快樂襪",
+      "精品麵包烘焙",
+      "文創藝術ESG"
+    ],
+    "heroCategory": "島嶼織品",
+    "brandTitle": "瑪利亞 MerryYoung",
+    "logoText": "Merry\nYoung",
+    "logoTheme": "terra",
+    "brandTag": "島嶼織品",
+    "productTag": "原創藝術快樂襪",
+    "image": "/images/organizations/org-18.jpg",
+    "verified": true,
+    "imageSource": "https://www.maria.org.tw/images/indexBanner.jpg",
+    "imageDimensions": {
+      "width": 2048,
+      "height": 730
+    }
+  },
+  {
+    "id": 19,
+    "name": "財團法人臺中市私立十方社會福利慈善事業基金會附設社會企業發展部",
+    "shortName": "十方啟能中心（十方社企）",
+    "region": "中部",
+    "city": "臺中市",
+    "district": "北屯區",
+    "address": "臺中市北屯區亞哥九號步道橫坑巷77-2號",
+    "phone": "(04)2239-3008",
+    "website": "https://www.sfang.org.tw/",
+    "category": "手作烘焙 & 景觀咖啡與手作工坊",
+    "targetGroup": "心智障礙青年與重度障礙者",
+    "featuredProducts": [
+      {
+        "name": "十方手工綜合堅果太妃糖",
+        "desc": "大顆飽滿腰果杏仁，慢熬焦糖乳香，老少咸宜。"
+      },
+      {
+        "name": "大坑在地土鳳梨酥/手工餅乾",
+        "desc": "融入大坑在地新鮮食材，酥鬆皮薄餡多。"
+      }
+    ],
+    "story": "座落於台中大坑山林裡的十方啟能中心，創立三十多年來致力於身障青年復健培力與生活訓練。社會企業部將大自然環境結合烘焙工坊與咖啡廳，讓學員在大坑青山環抱下，專注製作出充滿溫度的甜點伴手禮。",
+    "badges": [
+      "大坑青山工坊",
+      "手工太妃糖",
+      "台中老字號社福",
+      "社會企業創新"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "十方啟能社會企業",
+    "logoText": "十方\n啟能",
+    "logoTheme": "green",
+    "brandTag": "手作烘焙",
+    "productTag": "太妃糖/土鳳梨酥",
+    "image": "/images/organizations/org-19.png",
+    "verified": true,
+    "imageSource": "https://www.sfang.org.tw/upload/{638563048010549153}_5.png",
+    "imageDimensions": {
+      "width": 1288,
+      "height": 285
+    }
+  },
+  {
+    "id": 20,
+    "name": "社團法人臺中市身心障礙者福利關懷協會附設微笑天使烘焙坊",
+    "shortName": "微笑天使烘焙坊",
+    "region": "中部",
+    "city": "臺中市",
+    "district": "南區",
+    "address": "臺中市南區復興路一段241號",
+    "phone": "(04)22607321#30",
+    "website": "https://www.smileangel.com.tw/",
+    "category": "手作烘焙 & 伴手禮盒",
+    "targetGroup": "心智障礙及發展遲緩青年（微笑天使）",
+    "featuredProducts": [
+      {
+        "name": "微笑天使手工餅乾分享罐",
+        "desc": "多種口味繽紛造型，嚴選天然無防腐劑原料。"
+      },
+      {
+        "name": "中秋經典廣式月餅/蛋黃酥",
+        "desc": "專業西點師傅輔導天使學員精細烘烤，香氣四溢。"
+      }
+    ],
+    "story": "「用微笑面對挑戰，用雙手烘烤希望！」微笑天使烘焙坊提供身心障礙青年一個像家一樣的庇護工作環境。學員們認真秤料、過篩、成形，每一片餅乾都是他們邁向自立的堅定腳步。",
+    "badges": [
+      "台中庇護工場",
+      "微笑天使品牌",
+      "精緻伴手禮",
+      "安心純手工"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "微笑天使烘焙坊",
+    "logoText": "微笑\n天使",
+    "logoTheme": "beige",
+    "brandTag": "手作烘焙",
+    "productTag": "純手作分享餅乾",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 21,
+    "name": "立達啟能訓練中心附設實習商店",
+    "shortName": "立達啟能訓練中心（慢兔兔）",
+    "region": "中部",
+    "city": "臺中市",
+    "district": "北區",
+    "address": "臺中市北區育德路16號",
+    "phone": "(04)2202-8888#121",
+    "website": "https://www.lidatc.org.tw/",
+    "category": "手作烘焙 & 慢兔兔手作良品",
+    "targetGroup": "心智障礙青年（慢兔兔）",
+    "featuredProducts": [
+      {
+        "name": "慢兔兔 手作天然香草餅乾/月餅",
+        "desc": "天然草本香草入味，外盒慢兔兔原創插畫療癒溫馨。"
+      },
+      {
+        "name": "手作無毒家事手工皂",
+        "desc": "家事清潔好幫手，去污去油力強且友善環境。"
+      }
+    ],
+    "story": "天主教立達啟能訓練中心創立「慢兔兔」品牌。慢兔兔走得雖然慢，但步伐堅定踏實。透過實習商店與烘焙工作坊，學員在安全有愛的環境中學習職場技能，將手作的純淨美好傳遞給社會。",
+    "badges": [
+      "慢兔兔品牌",
+      "天主教愛心機構",
+      "香草手作餅乾",
+      "友善環境手工皂"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "立達慢兔兔",
+    "logoText": "慢兔兔",
+    "logoTheme": "ochre",
+    "brandTag": "日常器物",
+    "productTag": "無毒家事皂/香草餅",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 22,
+    "name": "社團法人臺中市蓮心自強服務協會",
+    "shortName": "臺中市蓮心自強服務協會",
+    "region": "中部",
+    "city": "臺中市",
+    "district": "大甲區",
+    "address": "臺中市大甲區經國路1028號",
+    "phone": "(04)2680-5843",
+    "website": "https://www.lian-xin.org.tw/",
+    "category": "在地風味 & 大甲在地農產手工點心",
+    "targetGroup": "肢體障礙、身心障礙弱勢家庭",
+    "featuredProducts": [
+      {
+        "name": "大甲芋頭手作酥餅/芋頭條",
+        "desc": "嚴選大甲在地特級檳榔心芋頭，香氣濃郁口感酥脆。"
+      },
+      {
+        "name": "蓮心手作養生堅果塔",
+        "desc": "豐富堅果搭配酥香塔皮，營養滿分。"
+      }
+    ],
+    "story": "台中大甲蓮心自強服務協會深耕海線地區，陪伴肢體與身心障礙朋友走出陰霾、自立自強。結合大甲馳名全台的芋頭農產，研發出香濃可口的芋頭酥與手作點心，成為大甲在地最動人的愛心名產。",
+    "badges": [
+      "大甲芋頭特產",
+      "海線在地關懷",
+      "身障自強自立",
+      "在地風味"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "蓮心自強大甲手作",
+    "logoText": "蓮心\n自強",
+    "logoTheme": "terra",
+    "brandTag": "在地風味",
+    "productTag": "大甲芋頭酥/堅果塔",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 23,
+    "name": "財團法人彰化縣私立慈生仁愛院",
+    "shortName": "慈生仁愛院（慈生烘焙坊）",
+    "region": "中部",
+    "city": "彰化縣",
+    "district": "彰化市",
+    "address": "彰化縣彰化市慈生街72號",
+    "phone": "(04)722-2735#111",
+    "website": "https://www.tzsh.org.tw/",
+    "category": "手作烘焙 & 傳統古早味糕餅",
+    "targetGroup": "智能障礙及多重障礙院生",
+    "featuredProducts": [
+      {
+        "name": "慈生古早味鳳梨酥/蛋黃酥",
+        "desc": "傳承數十年老師傅手藝，餅皮金黃香酥，內餡飽滿扎實。"
+      },
+      {
+        "name": "手工堅果薄餅與曲奇",
+        "desc": "薄脆爽口、減糖配方，一口接一口停不下來。"
+      }
+    ],
+    "story": "彰化慈生仁愛院創立於民國40年代，是彰化歷史悠久的社福堡壘。慈生烘焙坊讓院生在反覆練習中掌握烘焙技巧，每一份出爐的古早味糕餅，都承載著數十年如一日的愛與堅持。",
+    "badges": [
+      "彰化老字號",
+      "古早味糕餅",
+      "古法手工蛋黃酥",
+      "長照與育幼支持"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "慈生仁愛烘焙坊",
+    "logoText": "慈生\n仁愛",
+    "logoTheme": "beige",
+    "brandTag": "手作烘焙",
+    "productTag": "古早味手工蛋黃酥",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 24,
+    "name": "財團法人彰化縣私立基督教喜樂保育院",
+    "shortName": "喜樂保育院（喜樂水餃/愛加倍）",
+    "region": "中部",
+    "city": "彰化縣",
+    "district": "二林鎮",
+    "address": "彰化縣二林鎮中西里二溪路七段780號",
+    "phone": "(04)890-3281",
+    "website": "https://www.joyce99.org.tw/",
+    "category": "在地風味 & 喜樂手工水餃",
+    "targetGroup": "身心障礙者、小兒麻痺及多重障礙朋友",
+    "featuredProducts": [
+      {
+        "name": "喜樂手工水餃（高麗菜/韭菜/玉米/素食）",
+        "desc": "全台團購傳奇！皮Q餡滿，使用在地溫體豬肉與鮮採蔬菜，顆顆扎實飽滿。"
+      },
+      {
+        "name": "喜樂手工餅乾禮盒",
+        "desc": "天然奶油純手工烘焙，濃郁酥脆。"
+      }
+    ],
+    "story": "美籍瑪喜樂阿嬤將一生奉獻給彰化二林的身障弱勢孩子。「喜樂手工水餃」提供身障員工穩定工作機會，每顆水餃都由身障職人親手捏合，皮薄餡多汁，成為全台灣企業與家庭冷凍庫必備的美味傳奇！",
+    "badges": [
+      "全台團購冠軍水餃",
+      "瑪喜樂阿嬤大愛",
+      "彰化二林在地",
+      "顆顆扎實大水餃"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "喜樂手工水餃",
+    "logoText": "喜樂\nJOY",
+    "logoTheme": "green",
+    "brandTag": "在地風味",
+    "productTag": "爆汁高麗菜鮮肉水餃",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 25,
+    "name": "社團法人彰化縣自閉症肯納家長協會附設肯納兒烘焙坊",
+    "shortName": "肯納兒烘焙坊（彰化肯納）",
+    "region": "中部",
+    "city": "彰化縣",
+    "district": "彰化市",
+    "address": "彰化縣彰化市大埔路687號",
+    "phone": "(04)722-3460",
+    "website": "https://www.ch-kanner.org.tw/",
+    "category": "手作烘焙 & 養生點心",
+    "targetGroup": "自閉症青年（肯納兒）",
+    "featuredProducts": [
+      {
+        "name": "肯納兒手作養生堅果塔/土鳳梨酥",
+        "desc": "星兒極致專注的烘焙工藝，塔皮酥香內餡豐富。"
+      },
+      {
+        "name": "純手作雪Q餅/牛軋餅禮盒",
+        "desc": "香酥微甜不黏牙，下午茶最佳良伴。"
+      }
+    ],
+    "story": "自閉症孩子常被稱為「來自星星的孩子」，擁有獨特而專注的內心世界。彰化肯納家長協會打造肯納兒烘焙坊，發揮星兒按部就班、一絲不苟的特長，烘焙出品質極其穩定、口感絕佳的手工好物。",
+    "badges": [
+      "肯納星兒匠心",
+      "手作堅果塔",
+      "雪Q餅人氣伴手",
+      "彰化在地社福"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "肯納兒烘焙坊",
+    "logoText": "肯納兒",
+    "logoTheme": "terra",
+    "brandTag": "手作烘焙",
+    "productTag": "養生堅果塔/雪Q餅",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 26,
+    "name": "社團法人雲林縣聲暉協進會",
+    "shortName": "雲林縣聲暉協進會",
+    "region": "中部",
+    "city": "雲林縣",
+    "district": "斗南鎮/斗六市",
+    "address": "雲林縣斗南鎮福德街49號",
+    "phone": "(05)597-4861",
+    "website": "https://www.facebook.com/ylsh5974861/",
+    "category": "在地風味 & 雲林在地農產加工點心",
+    "targetGroup": "聽覺障礙者及多重障礙家庭",
+    "featuredProducts": [
+      {
+        "name": "雲林在地黑豆茶/穀物養生飲",
+        "desc": "選用雲林在地產銷黑豆低溫烘焙，香氣濃郁甘醇。"
+      },
+      {
+        "name": "聲暉手作古早味花生糖/米香",
+        "desc": "結合雲林元長優質花生，香脆不黏牙。"
+      }
+    ],
+    "story": "雲林聲暉協進會陪伴聽障孩子與家庭共同成長。協進會結合農業大縣雲林的豐富特產，輔導聽障學員研發黑豆茶包與古早味花生點心，用最實在的土地滋味，傳遞無聲世界裡最真摯的心意。",
+    "badges": [
+      "雲林黑豆特產",
+      "聽障職培自立",
+      "無毒養生穀物",
+      "在地農業結合"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "雲林聲暉手作",
+    "logoText": "雲林\n聲暉",
+    "logoTheme": "ochre",
+    "brandTag": "在地風味",
+    "productTag": "產銷黑豆茶/花生糖",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 27,
+    "name": "財團法人若竹兒教育基金會附設嘉義縣私立若竹兒智能發展中心",
+    "shortName": "若竹兒智能發展中心（若竹兒烘焙）",
+    "region": "南部",
+    "city": "嘉義縣",
+    "district": "民雄鄉",
+    "address": "嘉義縣民雄鄉大崎村2鄰大興南路168號",
+    "phone": "(05)220-9987",
+    "website": "https://www.rwch.org.tw/",
+    "category": "手作烘焙 & 節慶精選伴手禮",
+    "targetGroup": "智能障礙及多重障礙青年",
+    "featuredProducts": [
+      {
+        "name": "若竹兒手工餅乾鐵盒/綜合提盒",
+        "desc": "香酥可口，多款手作造型，純天然無人工香精。"
+      },
+      {
+        "name": "民雄在地鳳梨酥/土鳳梨大餅",
+        "desc": "嚴選嘉義民雄產地新鮮鳳梨熬醬，酸甜濃醇。"
+      }
+    ],
+    "story": "「如同雨後春筍，若竹般堅韌茁壯。」若竹兒基金會由嘉義三十位身障者家長共同發起創立。民雄的若竹兒家園提供身障青年日間與住宿照護，烘焙坊更結合在地鳳梨特產，打造嘉義代表性愛心伴手禮。",
+    "badges": [
+      "嘉義民雄名產",
+      "在地鳳梨酥",
+      "若竹兒家園",
+      "家長互助典範"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "若竹兒智能發展中心",
+    "logoText": "若竹兒",
+    "logoTheme": "green",
+    "brandTag": "手作烘焙",
+    "productTag": "民雄鳳梨酥/手工餅乾",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 28,
+    "name": "戴德森醫療財團法人嘉義基督教醫院附設再耕園咖啡庇護工場",
+    "shortName": "再耕園庇護工場（嘉基再耕園）",
+    "region": "南部",
+    "city": "嘉義市",
+    "district": "西區",
+    "address": "嘉義市西區玉康路160號",
+    "phone": "(05)285-2698#232",
+    "website": "https://www.zych.org.tw/",
+    "category": "手作烘焙 & 精品咖啡豆",
+    "targetGroup": "各類身心障礙朋友",
+    "featuredProducts": [
+      {
+        "name": "再耕園 精品手沖濾掛咖啡禮盒",
+        "desc": "專業咖啡烘焙師精選配方豆，甘醇回甘層次豐富。"
+      },
+      {
+        "name": "手工低糖曲奇餅乾與手工皂",
+        "desc": "身障學員用心製作，包裝精美送禮大方。"
+      }
+    ],
+    "story": "嘉義基督教醫院承辦「再耕園」，是雲嘉南地區身心障礙者職業重建的核心基地。「在荒漠中再次耕耘希望」，再耕園咖啡工場訓練學員成為專業咖啡師與烘焙助手，讓每一杯咖啡都溢滿希望香氣。",
+    "badges": [
+      "嘉基醫療支持",
+      "專業精品咖啡",
+      "雲嘉南職業重建",
+      "手作曲奇禮盒"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "嘉基再耕園",
+    "logoText": "再耕園",
+    "logoTheme": "slate",
+    "brandTag": "在地風味",
+    "productTag": "精品手沖濾掛咖啡",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 29,
+    "name": "財團法人台南市私立天主教瑞復益智中心附設漁光小舖",
+    "shortName": "瑞復益智中心（漁光小舖）",
+    "region": "南部",
+    "city": "臺南市",
+    "district": "安平區（漁光島）",
+    "address": "臺南市安平區漁光路134號",
+    "phone": "(06)391-1531轉252",
+    "website": "https://www.st-raphael.org.tw/",
+    "category": "手作烘焙 & 漁光島特色良品",
+    "targetGroup": "發展遲緩嬰幼兒、心智障礙及多重障礙青年",
+    "featuredProducts": [
+      {
+        "name": "瑞復手作「南棗核桃糕」/手工餅乾",
+        "desc": "台南超人氣名品！慢火熬煮黑棗泥，軟Q醇香不甜膩。"
+      },
+      {
+        "name": "漁光島香草花草茶與陶藝",
+        "desc": "漁光島海風吹拂下的手作香草茶，靜心舒壓。"
+      }
+    ],
+    "story": "坐落於台南安平美麗漁光島上的瑞復益智中心，是南台灣身障早療與成人培力的溫暖港灣。附設「漁光小舖」出產的南棗核桃糕與烘焙餅乾，憑藉極致美味成為台南在地人與遊客爭相訂購的隱藏版伴手禮。",
+    "badges": [
+      "台南漁光島",
+      "隱藏版南棗核桃糕",
+      "天主教愛心早療",
+      "台南伴手禮名店"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "瑞復漁光小舖",
+    "logoText": "漁光\n小舖",
+    "logoTheme": "navy",
+    "brandTag": "手作烘焙",
+    "productTag": "經典南棗核桃糕",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 30,
+    "name": "衛生福利部嘉南療養院愛的集團",
+    "shortName": "愛的集團（衛福部嘉南療養院）",
+    "region": "南部",
+    "city": "臺南市",
+    "district": "仁德區",
+    "address": "臺南市仁德區中山路870巷80號",
+    "phone": "(06)279-5019轉1227",
+    "website": "https://www.cnpc.mohw.gov.tw/",
+    "category": "手作烘焙 & 清潔洗沐",
+    "targetGroup": "精神障礙康復學員",
+    "featuredProducts": [
+      {
+        "name": "愛的烘焙 手工鳳梨酥/養生吐司",
+        "desc": "天然酵母發酵，少油少鹽，新鮮現做香軟可口。"
+      },
+      {
+        "name": "手作冷製精油手工皂",
+        "desc": "添加天然植物精油，泡沫細緻溫和清潔。"
+      }
+    ],
+    "story": "嘉南療養院「愛的集團」為精神康復之友建構完善的職能復健工作坊。透過烘焙、清潔打掃與手工藝創作，學員在規律工作中重建自信與尊嚴，將溫暖的愛回饋給社會。",
+    "badges": [
+      "精神職能復健",
+      "健康天然烘焙",
+      "精油手工皂",
+      "台南仁德"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "嘉南愛的集團",
+    "logoText": "愛的\n集團",
+    "logoTheme": "beige",
+    "brandTag": "日常器物",
+    "productTag": "精油冷製手工皂",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 31,
+    "name": "財團法人台灣省私立鴻佳啟能庇護中心",
+    "shortName": "鴻佳啟能庇護中心（鴻佳慢飛天使）",
+    "region": "南部",
+    "city": "臺南市",
+    "district": "南區",
+    "address": "臺南市南區清水路222巷38號",
+    "phone": "(06)262-3456#109",
+    "website": "https://www.hc-home.org.tw/",
+    "category": "手作烘焙 & 精緻伴手禮",
+    "targetGroup": "心智障礙及多重身障者",
+    "featuredProducts": [
+      {
+        "name": "鴻佳手作堅果夏威夷豆塔",
+        "desc": "滿滿飽滿夏威夷豆與香脆蔓越莓，淋上焦糖奶香醬，極致奢華。"
+      },
+      {
+        "name": "鴻佳鳳黃酥與手工餅乾",
+        "desc": "鹹甜交融的濃郁蛋黃香，中秋年節送禮首選。"
+      }
+    ],
+    "story": "台南鴻佳啟能庇護中心為重度身心障礙朋友打造全生涯照顧園地。中心設立陶藝與烘焙陶冶班，由慢飛天使親手製作的「夏威夷豆塔」顆顆真材實料，在府城享有極高盛譽。",
+    "badges": [
+      "台南老牌庇護",
+      "頂級夏威夷豆塔",
+      "全生涯照護",
+      "府城愛心名產"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "鴻佳啟能慢飛工坊",
+    "logoText": "鴻佳\n慢飛",
+    "logoTheme": "terra",
+    "brandTag": "手作烘焙",
+    "productTag": "夏威夷豆塔/鳳黃酥",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 32,
+    "name": "社團法人臺南市心智障礙關顧協會附設展翼烘焙坊",
+    "shortName": "展翼烘焙庇護工場",
+    "region": "南部",
+    "city": "臺南市",
+    "district": "永康區",
+    "address": "臺南市永康區富強路二段301號",
+    "phone": "(06)201-3217 / (06)201-4060",
+    "website": "https://www.facebook.com/wingbaking/",
+    "category": "手作烘焙 & 節慶伴手禮盒",
+    "targetGroup": "心智障礙及自閉症青年（展翼天使）",
+    "featuredProducts": [
+      {
+        "name": "展翼經典手工手工餅乾鐵盒",
+        "desc": "多種手作酥餅，嚴選安佳奶油與非基改食材。"
+      },
+      {
+        "name": "展翼金鑽土鳳梨酥/綠豆椪",
+        "desc": "傳統古法技藝，層次酥化、香氣迷人。"
+      }
+    ],
+    "story": "「展翅飛翔，看見希望！」台南展翼烘焙坊由一群智障者家長創立，是台南永康知名的庇護工場。這裡的孩子專心致志於每一個烘焙步驟，出產的糕點獲評台南百家好店殊榮。",
+    "badges": [
+      "台南百家好店",
+      "永康庇護工場",
+      "嚴選安佳奶油",
+      "中秋年節熱門禮盒"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "展翼烘焙庇護工場",
+    "logoText": "展翼\n烘焙",
+    "logoTheme": "green",
+    "brandTag": "手作烘焙",
+    "productTag": "手工餅乾鐵盒/綠豆椪",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 33,
+    "name": "財團法人台南市私立蓮心園社會福利慈善事業基金會",
+    "shortName": "蓮心園基金會（蓮心園庇護農場）",
+    "region": "南部",
+    "city": "臺南市",
+    "district": "白河區/後壁區",
+    "address": "臺南市白河區竹門里竹門110號",
+    "phone": "(06)688-2711分機609",
+    "website": "https://www.lsy.org.tw/",
+    "category": "在地風味 & 無毒農業生鮮與加工",
+    "targetGroup": "心智障礙者及多重障礙青年",
+    "featuredProducts": [
+      {
+        "name": "蓮心園日曬越光米/後壁無毒米",
+        "desc": "後壁無污染水質灌溉，憨兒親手插秧除草日曬，米粒香Q彈牙。"
+      },
+      {
+        "name": "無毒紫蘇梅與手作手工皂",
+        "desc": "自家農場無毒栽培紫蘇梅自然醃漬，甘酸生津。"
+      }
+    ],
+    "story": "台南白河蓮心園推動「無毒庇護生態農場」，座落於台灣著名米鄉後壁與蓮鄉白河交界。憨兒青年化身快樂綠手指，用日曬稻米、紫蘇梅與自然農法作物，打造台南最純淨的自然良品。",
+    "badges": [
+      "白河後壁無毒農場",
+      "日曬頂級越光米",
+      "天然紫蘇梅",
+      "綠色生態農村"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "蓮心園無毒農場",
+    "logoText": "蓮心園",
+    "logoTheme": "green",
+    "brandTag": "在地風味",
+    "productTag": "後壁日曬頂級越光米",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 34,
+    "name": "高雄市立凱旋醫院附設社區復健中心夢想起飛商行",
+    "shortName": "夢想起飛商行（高市凱旋醫院）",
+    "region": "南部",
+    "city": "高雄市",
+    "district": "苓雅區",
+    "address": "高雄市苓雅區凱旋二路130號",
+    "phone": "(07)713-1236#235",
+    "website": "https://kppc.kcg.gov.tw/",
+    "category": "手作烘焙 & 生活良品",
+    "targetGroup": "精神障礙康復學員",
+    "featuredProducts": [
+      {
+        "name": "夢想起飛手作牛軋糖/雪Q餅",
+        "desc": "香濃奶香搭配爽口堅果，甜而不膩。"
+      },
+      {
+        "name": "手作植物精油手工皂",
+        "desc": "天然溫和配方，日常洗手沐浴清新舒適。"
+      }
+    ],
+    "story": "高雄市立凱旋醫院設立「夢想起飛商行」，讓精神障礙康復朋友在此進行工作技能陶冶。商行商品由學員親手封裝、販售，讓支持者看見他們的進步與對生活的熱愛。",
+    "badges": [
+      "公立精神復健",
+      "手作雪Q餅",
+      "日常洗沐皂",
+      "高雄在地支持"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "凱旋夢想起飛",
+    "logoText": "夢想\n起飛",
+    "logoTheme": "ochre",
+    "brandTag": "日常器物",
+    "productTag": "植物精油皂/雪Q餅",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 35,
+    "name": "中外餅舖有限公司附設中外餅舖庇護工場",
+    "shortName": "中外餅舖庇護工場（百年老店）",
+    "region": "南部",
+    "city": "高雄市",
+    "district": "左營區",
+    "address": "高雄市左營區左營大路98號",
+    "phone": "07-5886366",
+    "website": "https://www.chunya1905.com.tw/",
+    "category": "手作烘焙 & 傳統高雄老字號糕點",
+    "targetGroup": "身心障礙及智能障礙青年",
+    "featuredProducts": [
+      {
+        "name": "中外餅舖「棋餅」文創禮盒",
+        "desc": "獲獎無數！將傳統綠豆糕化為中國象棋造型，邊玩邊吃的文創糕點。"
+      },
+      {
+        "name": "百年大道公鳳梨酥/伴手禮",
+        "desc": "傳承百年的獨門製餅工藝，皮薄餡香。"
+      }
+    ],
+    "story": "創立於1905年、座落於高雄左營蓮池潭畔的「中外餅舖」是高雄百年糕餅名店。第四代傳人毅然成立庇護工場，將百年技藝無私傳授身障孩子，將傳統棋餅與文創完美結合，成為台灣社會企業最動人的典範！",
+    "badges": [
+      "百年老店傳承",
+      "高雄十大伴手禮",
+      "文創棋餅",
+      "國家級庇護典範"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "中外餅舖百年庇護",
+    "logoText": "中外\n餅舖",
+    "logoTheme": "terra",
+    "brandTag": "手作烘焙",
+    "productTag": "文創棋餅/大道公餅",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 36,
+    "name": "社團法人高雄市小草關懷協會",
+    "shortName": "小草關懷協會（小草烘焙工坊）",
+    "region": "南部",
+    "city": "高雄市",
+    "district": "小港區",
+    "address": "高雄市小港區大苓里松金街16號",
+    "phone": "(07)806-1733",
+    "website": "https://www.facebook.com/grasscare/",
+    "category": "手作烘焙 & 生活手工藝",
+    "targetGroup": "精神障礙康復者及社區弱勢",
+    "featuredProducts": [
+      {
+        "name": "小草手作綜合手工餅乾",
+        "desc": "無添加防腐劑，使用健康燕麥與天然堅果。"
+      },
+      {
+        "name": "手作布藝環保提袋/杯套",
+        "desc": "學員細心車縫，環保又實用。"
+      }
+    ],
+    "story": "「小草雖小，但生命力無比強韌！」高雄小草關懷協會陪伴精神康復朋友走出孤立，在社區中建立支持據點。學員在小草工坊中協力製作餅乾與手作，展現如小草般迎風向陽的堅韌生命力。",
+    "badges": [
+      "社區精神復健",
+      "健康燕麥餅乾",
+      "布藝手作良品",
+      "高雄小港在地"
+    ],
+    "heroCategory": "島嶼織品",
+    "brandTitle": "小草關懷工坊",
+    "logoText": "小草\n關懷",
+    "logoTheme": "green",
+    "brandTag": "島嶼織品",
+    "productTag": "手作布藝提袋/燕麥餅",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 37,
+    "name": "社團法人高雄市心理復健協會",
+    "shortName": "高雄市心理復健協會（耕心工作坊）",
+    "region": "南部",
+    "city": "高雄市",
+    "district": "苓雅區/新興區",
+    "address": "高雄市苓雅區憲政路100號",
+    "phone": "(07)338-1771",
+    "website": "https://www.kprma.org.tw/",
+    "category": "生活良品 & 代工與文創",
+    "targetGroup": "精神障礙康復者",
+    "featuredProducts": [
+      {
+        "name": "耕心天然冷製手工皂",
+        "desc": "草本植萃配方，泡沫溫和細緻，滋潤肌膚。"
+      },
+      {
+        "name": "精緻文創杯墊與布作小物",
+        "desc": "手作細膩，適合辦公室生活日常點綴。"
+      }
+    ],
+    "story": "高雄市心理復健協會成立「耕心工作坊」，陪伴康復之友深耕心靈、重拾自信。透過專業手工皂製程與代工包裝訓練，讓學員在互助合作中回歸常態生活，收穫滿滿的自我肯定。",
+    "badges": [
+      "心理復健支持",
+      "草本手工冷製皂",
+      "文創布藝",
+      "愛心生活好物"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "耕心工作坊",
+    "logoText": "耕心",
+    "logoTheme": "slate",
+    "brandTag": "日常器物",
+    "productTag": "草本植萃冷製手工皂",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 38,
+    "name": "一家工場",
+    "shortName": "一家工場（高雄市身心障礙者庇護工場）",
+    "region": "南部",
+    "city": "高雄市",
+    "district": "鳳山區",
+    "address": "高雄市鳳山區國泰路一段67-1號",
+    "phone": "(07)790-2239",
+    "website": "https://www.facebook.com/onefamily7902239/",
+    "category": "生活良品 & 環保洗沐與香氛手作",
+    "targetGroup": "各類身心障礙朋友",
+    "featuredProducts": [
+      {
+        "name": "一家工場「日光皂」與環保洗衣精",
+        "desc": "全台熱銷口碑款！天然植物油脂製造，生物分解度高，去污溫和不傷手。"
+      },
+      {
+        "name": "天然精油擴香石/防蚊磚",
+        "desc": "學員手工灌模調香，純天然無毒香氛。"
+      }
+    ],
+    "story": "位於高雄鳳山的一家工場，是南台灣極具規模的專業庇護工場。主打環保洗劑、天然手工皂與香氛手作，多年來為各大機關企業客製化ESG採購禮盒，用環保潔淨的商品守護大地與身障就業。",
+    "badges": [
+      "高雄鳳山庇護",
+      "明星商品日光皂",
+      "環保天然洗劑",
+      "企業ESG大宗採購首選"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "一家工場日光皂",
+    "logoText": "一家\n工場",
+    "logoTheme": "green",
+    "brandTag": "日常器物",
+    "productTag": "招牌環保日光皂/洗劑",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 39,
+    "name": "社團法人高雄三山脊損重建協會",
+    "shortName": "高雄三山脊損重建協會（三山髓友工坊）",
+    "region": "南部",
+    "city": "高雄市",
+    "district": "岡山區",
+    "address": "高雄市岡山區壽天路24號",
+    "phone": "(07)719-1039",
+    "website": "https://www.facebook.com/33sci/",
+    "category": "生活良品 & 輪椅職人工藝",
+    "targetGroup": "脊髓損傷輪椅朋友",
+    "featuredProducts": [
+      {
+        "name": "髓友手作皮革皮件/鑰匙圈",
+        "desc": "頂級牛皮手工縫製，邊緣細緻打磨，耐用歷久彌新。"
+      },
+      {
+        "name": "天然艾草防蚊薰香/手工皂",
+        "desc": "古法天然艾草研磨製作，淨化空氣溫和驅蚊。"
+      }
+    ],
+    "story": "脊髓損傷者面對輪椅上的人生劇變，需要超乎常人的勇氣。三山脊損協會陪伴髓友走出家門，成立皮革工藝與手工皂工坊，輪椅職人們以堅毅無比的專注力，雕琢出令人讚嘆的皮革精品。",
+    "badges": [
+      "輪椅職人匠心",
+      "真皮手工皮件",
+      "天然艾草薰香",
+      "生命韌性"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "三山髓友皮件工坊",
+    "logoText": "三山\n髓友",
+    "logoTheme": "terra",
+    "brandTag": "日常器物",
+    "productTag": "輪椅職人真皮手工皮件",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 40,
+    "name": "長庚醫療財團法人高雄長庚紀念醫院附設湖畔咖啡屋",
+    "shortName": "湖畔咖啡屋（高雄長庚）",
+    "region": "南部",
+    "city": "高雄市",
+    "district": "鳥松區",
+    "address": "高雄市鳥松區大埤路123號（長庚湖畔）",
+    "phone": "(07)731-7123#8769",
+    "website": "https://www.cgmh.org.tw/",
+    "category": "手作烘焙 & 濾掛咖啡西點",
+    "targetGroup": "精神障礙康復者",
+    "featuredProducts": [
+      {
+        "name": "湖畔嚴選濾掛咖啡禮盒",
+        "desc": "香醇精品咖啡豆，現磨充氮包裝，香氣持久。"
+      },
+      {
+        "name": "手工低糖蔓越莓餅乾/司康",
+        "desc": "烘焙學員每日手工新鮮現烤，香酥甜美。"
+      }
+    ],
+    "story": "座落於澄清湖畔高雄長庚醫院內的「湖畔咖啡屋」，提供精神復健學員真實且溫馨的餐飲實習場域。伴隨湖光水色，學員以親切的笑容沖煮咖啡、烘烤西點，撫慰每位來訪者的心靈。",
+    "badges": [
+      "長庚醫療體系",
+      "澄清湖畔美景",
+      "精品濾掛咖啡",
+      "手作現烤西點"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "長庚湖畔咖啡屋",
+    "logoText": "湖畔\n咖啡",
+    "logoTheme": "navy",
+    "brandTag": "在地風味",
+    "productTag": "精品現萃濾掛咖啡",
+    "image": "/images/organizations/org-40.jpg",
+    "verified": true,
+    "imageSource": "https://webapp.cgmh.org.tw/article/article_photo.ashx?type=info&id_seq=D1AO3NE001",
+    "imageDimensions": {
+      "width": 3840,
+      "height": 1300
+    }
+  },
+  {
+    "id": 41,
+    "name": "社團法人屏東縣向陽啟能協會",
+    "shortName": "向陽啟能協會（向陽工坊）",
+    "region": "南部",
+    "city": "屏東縣",
+    "district": "屏東市",
+    "address": "屏東縣屏東市大武路112號",
+    "phone": "(08)721-7361",
+    "website": "https://www.facebook.com/sunshine7217361/",
+    "category": "在地風味 & 屏東在地農產手作點心",
+    "targetGroup": "心智障礙青年",
+    "featuredProducts": [
+      {
+        "name": "屏東在地檸檬果乾/可可酥餅",
+        "desc": "選用屏東九如檸檬與在地屏東優質可可，在地濃香。"
+      },
+      {
+        "name": "向陽手作養生堅果塔禮盒",
+        "desc": "香脆塔皮與綜合堅果，節慶大宗採購首選。"
+      }
+    ],
+    "story": "向陽啟能協會如同南台灣燦爛的向日葵，引領心智障礙青年迎向陽光。工坊結合屏東在地豐富農產（如九如檸檬、屏東可可），研發出充滿陽光滋味的在地手作點心，創造在地就業機會。",
+    "badges": [
+      "屏東在地特產",
+      "九如檸檬可可",
+      "向陽工坊自立",
+      "陽光在地好物"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "向陽啟能工坊",
+    "logoText": "向陽\n工坊",
+    "logoTheme": "ochre",
+    "brandTag": "在地風味",
+    "productTag": "屏東九如檸檬乾/可可",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 42,
+    "name": "財團法人屏東基督教勝利之家附設膳工坊庇護工場",
+    "shortName": "膳工坊庇護工場（勝利之家）",
+    "region": "南部",
+    "city": "屏東縣",
+    "district": "屏東市",
+    "address": "屏東縣屏東市大連路19號",
+    "phone": "(08)736-6294#226",
+    "website": "https://www.vhome.org.tw/",
+    "category": "手作烘焙 & 節慶中西糕餅",
+    "targetGroup": "肢體障礙、腦性麻痺及心智障礙者",
+    "featuredProducts": [
+      {
+        "name": "膳工坊「黑金鳳梨酥」/綠豆椪",
+        "desc": "屏東在地特產！嚴選萬丹紅豆與在地鳳梨，皮酥餡嫩。"
+      },
+      {
+        "name": "多穀物手工養生餅乾禮盒",
+        "desc": "高纖低糖健康配方，口感豐富酥脆。"
+      }
+    ],
+    "story": "屏東勝利之家由基督教宣教士創立，深耕屏東身障服務七十餘年。附設「膳工坊庇護工場」是屏東首屈一指的身障烘焙典範，學員們用無比的熱忱與嚴謹品管，製作出榮獲屏東精選伴手禮的招牌糕餅。",
+    "badges": [
+      "屏東首家庇護工場",
+      "黑金鳳梨酥",
+      "萬丹紅豆糕餅",
+      "基督教宣教大愛"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "勝利之家膳工坊",
+    "logoText": "膳工坊",
+    "logoTheme": "terra",
+    "brandTag": "手作烘焙",
+    "productTag": "黑金鳳梨酥/萬丹紅豆",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 43,
+    "name": "慢慢恆春烘焙坊  (原：藍色海遇琪拉烘焙坊）",
+    "shortName": "慢慢恆春烘焙坊（恆春半島在地庇護）",
+    "region": "南部",
+    "city": "屏東縣",
+    "district": "恆春鎮",
+    "address": "屏東縣恆春鎮恆南路125巷12號",
+    "phone": "0927-558-828",
+    "website": "https://www.facebook.com/hengchunbakery/",
+    "category": "在地風味 & 恆春半島特產烘焙",
+    "targetGroup": "偏鄉身心障礙朋友與在地弱勢青年",
+    "featuredProducts": [
+      {
+        "name": "恆春港口茶手工餅乾",
+        "desc": "全台最南端海風吹拂的港口茶入餅，茶香濃郁回甘獨特。"
+      },
+      {
+        "name": "恆春洋蔥酥餅/落山風脆餅",
+        "desc": "融合恆春落山風孕育的鮮甜洋蔥，鹹香酥脆超涮嘴。"
+      }
+    ],
+    "story": "座落於台灣國境之南的恆春古城，慢慢恆春烘焙坊讓慢飛青年在最南端的土地上慢慢學、扎實做。將恆春半島特有的港口茶、落山風洋蔥化作一塊塊香氣撲鼻的在地酥餅，將南國的海風與陽光烘焙進點心裡。",
+    "badges": [
+      "恆春半島特產",
+      "港口茶手工餅乾",
+      "國境之南庇護",
+      "恆春洋蔥酥餅"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "慢慢恆春烘焙坊",
+    "logoText": "慢慢\n恆春",
+    "logoTheme": "navy",
+    "brandTag": "在地風味",
+    "productTag": "恆春港口茶手工餅乾",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 44,
+    "name": "財團法人蘭智社會福利基金會",
+    "shortName": "蘭智社會福利基金會（蘭智烘焙坊）",
+    "region": "東部",
+    "city": "宜蘭縣",
+    "district": "羅東鎮/冬山鄉",
+    "address": "宜蘭縣羅東鎮中山路二段262號",
+    "phone": "(03)961-0137#25 / (03)953-0129",
+    "website": "https://www.lan-ch.org.tw/",
+    "category": "手作烘焙 & 宜蘭在地名產點心",
+    "targetGroup": "心智障礙青年（蘭智天使）",
+    "featuredProducts": [
+      {
+        "name": "蘭智宜蘭金棗/三星蔥手作酥餅",
+        "desc": "結合宜蘭在地名產金棗與三星蔥，鹹甜雙重極致風味。"
+      },
+      {
+        "name": "蘭智手工牛軋糖/鳳梨酥禮盒",
+        "desc": "純手工熬煮糖漿，奶香濃郁且軟Q不黏牙。"
+      }
+    ],
+    "story": "蘭智基金會深耕宜蘭三十餘年，陪伴蘭陽平原的心智障礙孩子建立自立家園。蘭智烘焙坊嚴選宜蘭金棗、三星蔥等在地食材，讓蘭智天使在揉捏烘烤中找到自我價值，作品深受宜蘭在地人與遊客喜愛。",
+    "badges": [
+      "宜蘭在地特產",
+      "三星蔥金棗酥餅",
+      "蘭陽愛心守護",
+      "手工牛軋糖"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "蘭智社會福利",
+    "logoText": "蘭智",
+    "logoTheme": "green",
+    "brandTag": "在地風味",
+    "productTag": "宜蘭金棗/三星蔥酥餅",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 45,
+    "name": "財團法人宜蘭縣私立蘭馨婦幼中心",
+    "shortName": "蘭馨婦幼中心（蘭馨手作坊）",
+    "region": "東部",
+    "city": "宜蘭縣",
+    "district": "羅東鎮",
+    "address": "宜蘭縣羅東鎮純精路一段109號",
+    "phone": "(03)951-0518#225",
+    "website": "https://www.lan-xin.org.tw/",
+    "category": "生活良品 & 宜蘭織品文創手作",
+    "targetGroup": "弱勢身障婦女及兒少家庭",
+    "featuredProducts": [
+      {
+        "name": "蘭馨手作布藝拼布包/圍裙",
+        "desc": "精選日式純棉花布，在地媽媽細膩手縫，針腳密實。"
+      },
+      {
+        "name": "草本天然精油洗手皂",
+        "desc": "天然保濕配方，溫和洗淨不乾澀。"
+      }
+    ],
+    "story": "宜蘭蘭馨婦幼中心守護蘭陽平原弱勢婦女與特殊身障家庭，提供職業培力與心靈輔導。透過織品手作工坊，讓婦女與學員以靈巧雙手車縫出實用溫暖的布藝生活良品，為家庭撐起希望保護傘。",
+    "badges": [
+      "宜蘭女性培力",
+      "純棉手作布藝",
+      "溫暖家庭守護",
+      "生活文創良品"
+    ],
+    "heroCategory": "島嶼織品",
+    "brandTitle": "蘭馨織品手作坊",
+    "logoText": "蘭馨\n手作",
+    "logoTheme": "beige",
+    "brandTag": "島嶼織品",
+    "productTag": "純棉拼布生活包袋",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 46,
+    "name": "臺北榮民總醫院員山分院附設庇護工場",
+    "shortName": "員榮庇護工場（員山榮民分院）",
+    "region": "東部",
+    "city": "宜蘭縣",
+    "district": "員山鄉",
+    "address": "宜蘭縣員山鄉內城村榮光路386號",
+    "phone": "(03)923-3791",
+    "website": "https://www.ysvh.gov.tw/",
+    "category": "在地風味 & 特色洗沐清潔烘焙",
+    "targetGroup": "精神障礙康復者及身心障礙朋友",
+    "featuredProducts": [
+      {
+        "name": "員榮手作烘焙餅乾/咖啡包",
+        "desc": "嚴選食材，香氣撲鼻，午茶點心首選。"
+      },
+      {
+        "name": "天然精油手工皂與清潔用品",
+        "desc": "純淨無污染製程，溫和潔淨肌膚。"
+      }
+    ],
+    "story": "位於好山好水的宜蘭員山鄉，員榮庇護工場由台北榮總員山分院設立，致力於精神康復學員的社區復健。在員山純淨山水環抱中，學員用心製作烘焙與手工皂，一步步邁向重返社會的道路。",
+    "badges": [
+      "公立醫院庇護",
+      "宜蘭員山純淨山水",
+      "精神康復自立",
+      "安心手作烘焙"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "員榮庇護工場",
+    "logoText": "員榮\n庇護",
+    "logoTheme": "slate",
+    "brandTag": "日常器物",
+    "productTag": "純淨山水精油手工皂",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 47,
+    "name": "財團法人台灣基督教門諾會附設花蓮縣黎明身心障礙者庇護工場",
+    "shortName": "黎明身障庇護工場（花蓮黎明）",
+    "region": "東部",
+    "city": "花蓮縣",
+    "district": "花蓮市",
+    "address": "花蓮縣花蓮市民權路2-2號",
+    "phone": "(03)846-0527",
+    "website": "https://www.new-dawn.org.tw/",
+    "category": "手作烘焙 & 花蓮在地特產伴手禮",
+    "targetGroup": "自閉症、肯納兒及多重心智障礙青年",
+    "featuredProducts": [
+      {
+        "name": "黎明手作「七星潭檸檬薄餅」/餅乾",
+        "desc": "花蓮在地伴手禮人氣王！酥脆微酸，海風般的清新滋味。"
+      },
+      {
+        "name": "花蓮在地無毒紅豆/糙米小農米禮盒",
+        "desc": "支持花東有機小農與黎明庇護青年雙向共好。"
+      }
+    ],
+    "story": "花蓮黎明機構扎根後山逾四十年，秉持「基督的愛如黎明曙光」陪伴身障肯納青年。黎明庇護工場結合花蓮太平洋七星潭意象與花東縱谷無毒農產，烘烤出驚艷全台的手工點心，點亮後山希望。",
+    "badges": [
+      "花蓮七星潭檸檬餅",
+      "花東有機小農",
+      "自閉症星兒匠心",
+      "後山愛心燈塔"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "花蓮黎明庇護工場",
+    "logoText": "花蓮\n黎明",
+    "logoTheme": "navy",
+    "brandTag": "在地風味",
+    "productTag": "七星潭檸檬薄餅/米禮",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 48,
+    "name": "財團法人台東縣私立牧心智能發展中心附設庇護性烘焙工場",
+    "shortName": "牧心烘焙庇護工場（台東牧心）",
+    "region": "東部",
+    "city": "臺東縣",
+    "district": "臺東市",
+    "address": "臺東縣臺東市民生路21號",
+    "phone": "(089)237-121#160",
+    "website": "https://www.mindfarm.org.tw/",
+    "category": "手作烘焙 & 臺東在地特色糕餅",
+    "targetGroup": "智能障礙及多重障礙青年（牧心憨兒）",
+    "featuredProducts": [
+      {
+        "name": "牧心臺東紅藜/洛神花手工曲奇酥",
+        "desc": "採用台東縱谷紅藜與金峰特產洛神花，酸甜香脆、健康抗氧化。"
+      },
+      {
+        "name": "牧心經典金黃蛋黃酥/鳳梨酥禮盒",
+        "desc": "台東在地年節中秋排隊秒殺名店！純手工古法精製。"
+      }
+    ],
+    "story": "「牧育心智，憨兒自立！」台東牧心是後山台東最大的身障庇護家園。牧心烘焙坊將台東原住民紅藜、洛神花、卑南好米融入西點，每一顆點心都飽含台東的陽光、純淨泥土與憨兒專注純粹的愛。",
+    "badges": [
+      "台東在地紅藜洛神",
+      "台東排隊名店",
+      "純淨東台灣好物",
+      "憨兒全心手作"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "台東牧心智能發展",
+    "logoText": "台東\n牧心",
+    "logoTheme": "terra",
+    "brandTag": "手作烘焙",
+    "productTag": "台東紅藜洛神曲奇/月餅",
+    "image": "/images/organizations/org-48.jpg",
+    "verified": true,
+    "imageSource": "https://www.mindfarm.org.tw/upload/{639223103064445513}_3.jpg",
+    "imageDimensions": {
+      "width": 4152,
+      "height": 2945
+    }
+  },
+  {
+    "id": 49,
+    "name": "社團法人澎湖縣慢飛天使服務協會",
+    "shortName": "澎湖慢飛天使服務協會（集愛工坊）",
+    "region": "離島",
+    "city": "澎湖縣",
+    "district": "馬公市",
+    "address": "澎湖縣馬公市光復路186號2樓",
+    "phone": "(06)926-9855",
+    "website": "https://www.facebook.com/phslowflight/",
+    "category": "在地風味 & 菊島海島特色手作",
+    "targetGroup": "澎湖身心障礙青年（菊島慢飛天使）",
+    "featuredProducts": [
+      {
+        "name": "菊島仙人掌/風茹茶手工餅乾",
+        "desc": "嚴選澎湖特產野生仙人掌果與風茹草，天然嫣紅，茶香回甘。"
+      },
+      {
+        "name": "澎湖手工干貝海味醬禮盒",
+        "desc": "慢飛天使細心揀選干貝丁與丁香魚，鮮香濃醇。"
+      }
+    ],
+    "story": "在四面環海的菊島澎湖，慢飛天使協會守護著離島的身障孩子。「集愛工坊」將澎湖特色仙人掌、風茹茶與海味干貝融入烘焙與伴手禮中，讓離島孩子靠著勤奮的雙手，在海風中逆風飛翔。",
+    "badges": [
+      "澎湖仙人掌特產",
+      "菊島風茹茶點心",
+      "離島身障自立",
+      "海味手工伴手禮"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "澎湖慢飛天使集愛工坊",
+    "logoText": "集愛\n工坊",
+    "logoTheme": "navy",
+    "brandTag": "在地風味",
+    "productTag": "澎湖仙人掌/風茹茶餅",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 50,
+    "name": "財團法人晨光社會福利基金會附設妙妙屋庇護工場",
+    "shortName": "妙妙屋庇護工場（金門晨光）",
+    "region": "離島",
+    "city": "金門縣",
+    "district": "金湖鎮",
+    "address": "金門縣金湖鎮太湖路三段6號",
+    "phone": "(082)331345",
+    "website": "https://www.facebook.com/miaomiaohouse.km/",
+    "category": "手作烘焙 & 金門戰地特色伴手禮",
+    "targetGroup": "金門在地心智障礙及身障青年",
+    "featuredProducts": [
+      {
+        "name": "金門高粱一口酥/高粱手工餅乾",
+        "desc": "融入金門香醇高粱酒糟與穀物，酒香醇美、酥脆不含酒精。"
+      },
+      {
+        "name": "金門風獅爺造型文創餅乾",
+        "desc": "可愛風獅爺吉祥造型，金門必買文創愛心好物。"
+      }
+    ],
+    "story": "妙妙屋庇護工場是金門戰地前線第一家身障庇護工場。晨光基金會陪伴金門在地的身障大孩子，善用金門特產純釀高粱與風獅爺文化，烘焙出別具金門島嶼風情的特色美味，為金門注入滿滿暖意。",
+    "badges": [
+      "金門第一家庇護工場",
+      "高粱一口酥",
+      "風獅爺造型文創",
+      "戰地愛心之光"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "金門妙妙屋庇護工場",
+    "logoText": "妙妙屋",
+    "logoTheme": "terra",
+    "brandTag": "手作烘焙",
+    "productTag": "金門高粱一口酥/風獅爺",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 51,
+    "name": "更生少年關懷協會",
+    "shortName": "更生少年關懷協會（未來咖啡 / 616手作工坊）",
+    "region": "北部",
+    "city": "臺北市/新北市",
+    "district": "中山區/五股區",
+    "address": "臺北市中山區松江路362巷22號",
+    "phone": "(02)22977113",
+    "website": "https://www.616.org.tw/",
+    "category": "在地風味 & 職人特調咖啡與手作",
+    "targetGroup": "司法少年、高關懷非行少年與弱勢青少年",
+    "featuredProducts": [
+      {
+        "name": "未來咖啡 職人精品手沖濾掛禮盒",
+        "desc": "少年們從零考取SCA國際咖啡師執照，細膩烘焙手沖風味。"
+      },
+      {
+        "name": "手作巴斯克乳酪蛋糕/磅蛋糕",
+        "desc": "用料扎實，口感綿密濃郁，充滿重生的堅定力量。"
+      }
+    ],
+    "story": "更生少年關懷協會陪伴走過迷途的青少年逆轉人生。透過「未來咖啡」等培力據點，輔導少年考取專業咖啡證照與烘焙技藝，讓曾經迷惘的雙手化為沖煮極品咖啡的雙手，綻放自信光芒。",
+    "badges": [
+      "逆風青少年培力",
+      "SCA國際咖啡認證",
+      "未來咖啡品牌",
+      "翻轉迷途青春"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "更生少年未來咖啡",
+    "logoText": "未來\n咖啡",
+    "logoTheme": "slate",
+    "brandTag": "在地風味",
+    "productTag": "SCA國際手沖精品咖啡",
+    "image": "/images/organizations/org-51.jpg",
+    "verified": true,
+    "imageSource": "https://www.616.org.tw/img/carousel-1.jpg",
+    "imageDimensions": {
+      "width": 1367,
+      "height": 821
+    }
+  },
+  {
+    "id": 52,
+    "name": "失親兒福利基金會",
+    "shortName": "失親兒福利基金會（愛心市集）",
+    "region": "北部",
+    "city": "臺北市",
+    "district": "松山區",
+    "address": "臺北市松山區民生東路五段69巷2弄13號",
+    "phone": "(02)27477555",
+    "website": "https://www.orphan.org.tw/",
+    "category": "生活良品 & 失親兒藝術文創",
+    "targetGroup": "父母雙亡或單親失親弱勢兒少",
+    "featuredProducts": [
+      {
+        "name": "失親兒原創插畫文具與藝術年曆",
+        "desc": "孩童藝術療癒課中的純真畫作，充滿對家庭與未來的希望。"
+      },
+      {
+        "name": "手作溫暖帆布包/隨行杯",
+        "desc": "實用耐磨，每一件採購都化為失親兒的助學獎學金。"
+      }
+    ],
+    "story": "失親兒基金會全台設立十多處服務處，守護全台數千位失去雙親或單親突遭變故的孤兒少。透過藝術治療與課後輔導，陪伴孩子走出失落陰霾，用才華與畫筆描繪美麗人生。",
+    "badges": [
+      "失親兒少守護",
+      "原創心靈插畫文創",
+      "全台愛心助學",
+      "永續關懷"
+    ],
+    "heroCategory": "島嶼織品",
+    "brandTitle": "失親兒愛心文創",
+    "logoText": "失親兒",
+    "logoTheme": "ochre",
+    "brandTag": "島嶼織品",
+    "productTag": "心靈插畫手繪帆布包",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 53,
+    "name": "菩提澄園庇護工場",
+    "shortName": "菩提澄園庇護工場（蔬食烘焙）",
+    "region": "南部",
+    "city": "臺南市",
+    "district": "麻豆區",
+    "address": "臺南市麻豆區南勢里南勢84號",
+    "phone": "(06)5712342",
+    "website": "https://www.facebook.com/chengyuan5712342/",
+    "category": "手作烘焙 & 純素蔬食烘焙點心",
+    "targetGroup": "心智障礙及身心障礙朋友",
+    "featuredProducts": [
+      {
+        "name": "菩提澄園 純素/蛋奶素手工饅頭點心",
+        "desc": "堅持無添加人工香精與色素，嚴選天然五穀雜糧與麻豆在地蔬果。"
+      },
+      {
+        "name": "手作純素堅果餅乾與節慶素禮盒",
+        "desc": "吃純素朋友與養生族的絕佳愛心選擇。"
+      }
+    ],
+    "story": "菩提澄園庇護工場座落於台南麻豆文旦之鄉，主打健康蔬食、純素手工饅頭與烘焙點心。庇護學員秉持慈悲護生之心，用雙手揉製出一顆顆純淨無負擔的蔬食良品，廣受養生族群喜愛。",
+    "badges": [
+      "麻豆在地庇護",
+      "純素/蔬食養生",
+      "天然無人工添加",
+      "健康五穀手工饅頭"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "菩提澄園蔬食烘焙",
+    "logoText": "菩提\n澄園",
+    "logoTheme": "green",
+    "brandTag": "在地風味",
+    "productTag": "純素手工五穀饅頭/餅乾",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 54,
+    "name": "社團法人台灣福氣社區關懷協會",
+    "shortName": "台灣福氣社區關懷協會（福氣好物）",
+    "region": "中部",
+    "city": "臺中市",
+    "district": "清水區",
+    "address": "臺中市清水區中興街32號",
+    "phone": "(04)26268178",
+    "website": "https://www.fuqi.org.tw/",
+    "category": "在地風味 & 台中海線手作茶點",
+    "targetGroup": "雙老身障家庭、失智長者及心智障礙者",
+    "featuredProducts": [
+      {
+        "name": "福氣手作古早味高粱香腸/肉干",
+        "desc": "傳承台中海線家傳秘方，精選產銷履歷豬肉，香氣撲鼻。"
+      },
+      {
+        "name": "福氣手作無毒香草茶與手工皂",
+        "desc": "社區身障與長者共同耕作的香草園產出，溫馨療癒。"
+      }
+    ],
+    "story": "「福氣臨門，海線相伴。」台灣福氣協會深耕台中清水與海線各區，關懷「雙老身障家庭」（年邁父母照顧年長身障子女）。協會建立社區日照與培力工坊，讓身障子女學習一技之長，為家庭帶來長久福氣。",
+    "badges": [
+      "台中清水海線",
+      "雙老家庭守護",
+      "古法手工肉品",
+      "社區共生共好"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "台灣福氣社區好物",
+    "logoText": "福氣\n好物",
+    "logoTheme": "terra",
+    "brandTag": "在地風味",
+    "productTag": "古法高粱肉品/無毒香草",
+    "image": "/images/organizations/org-54.jpg",
+    "verified": true,
+    "imageSource": "https://www.fuqi.org.tw/images/b18051503.jpg",
+    "imageDimensions": {
+      "width": 800,
+      "height": 800
+    }
+  },
+  {
+    "id": 55,
+    "name": "財團法人臺中市私立信望愛智能發展中心",
+    "shortName": "信望愛智能發展中心（信望愛工坊）",
+    "region": "中部",
+    "city": "臺中市",
+    "district": "潭子區/豐原區",
+    "address": "臺中市潭子區中山路二段241巷7號",
+    "phone": "(04)25355030",
+    "website": "https://www.fhl.org.tw/",
+    "category": "手作烘焙 & 手工皂生活良品",
+    "targetGroup": "心智障礙、自閉症及發展遲緩兒少",
+    "featuredProducts": [
+      {
+        "name": "信望愛 手工冷壓初榨橄欖皂",
+        "desc": "特級冷壓橄欖油製作，泡沫細緻滋潤，敏感肌寶寶皆適用。"
+      },
+      {
+        "name": "信望愛堅果薄餅與曲奇分享盒",
+        "desc": "天然奶油純手工打發烘烤，酥脆入口即化。"
+      }
+    ],
+    "story": "信望愛智能發展中心秉持「信心、盼望、大愛」的基督精神，服務台中潭子、豐原、東勢等山線地區的身障家庭。信望愛工坊讓慢飛天使在愛中成長，出產的高品質天然手工皂與餅乾深受企業肯定。",
+    "badges": [
+      "信望愛精神",
+      "頂級冷壓橄欖皂",
+      "台中山線社福",
+      "溫和親膚天然配方"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "信望愛工坊",
+    "logoText": "信望愛",
+    "logoTheme": "green",
+    "brandTag": "日常器物",
+    "productTag": "初榨橄欖冷製洗沐皂",
+    "image": "/images/organizations/org-55.jpg",
+    "verified": true,
+    "imageSource": "https://www.fhl.org.tw/images/image-index/bg-20190212-newyear-IMG_2196.JPG",
+    "imageDimensions": {
+      "width": 800,
+      "height": 450
+    }
+  },
+  {
+    "id": 56,
+    "name": "社團法人台灣技職教育產學研合作發展協會",
+    "shortName": "台灣技職教育產學研協會（技職庇護創客）",
+    "region": "中部",
+    "city": "臺中市",
+    "district": "大甲區/沙鹿區",
+    "address": "臺中市大甲區經國路888號",
+    "phone": "(04)26805153",
+    "website": "https://www.facebook.com/tveia.tw/",
+    "category": "生活良品 & 技職創客工藝手作",
+    "targetGroup": "特教技職身障學生與弱勢青年",
+    "featuredProducts": [
+      {
+        "name": "創客手作雷雕原木杯墊/手機座",
+        "desc": "結合技職雷雕與木工技藝，溫潤實木細緻打磨。"
+      },
+      {
+        "name": "手作烘焙點心茶包禮盒",
+        "desc": "技職餐飲科身障學員產學合作精緻出產。"
+      }
+    ],
+    "story": "結合技職教育與產學研合作，協助特教身心障礙學生打通從校園到職場的最後一哩路。透過創客木藝、雷雕工藝與餐飲實習，讓身障青年發揮技職專長，打造充滿設計感的實木生活良品。",
+    "badges": [
+      "特教技職產學",
+      "原木雷雕文創",
+      "創客工藝良品",
+      "實用生活設計"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "技職創客工坊",
+    "logoText": "技職\n創客",
+    "logoTheme": "slate",
+    "brandTag": "日常器物",
+    "productTag": "特教原木雷雕生活杯墊",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 57,
+    "name": "社團法人屏東縣自閉症協進會",
+    "shortName": "屏東縣自閉症協進會（星兒工坊）",
+    "region": "南部",
+    "city": "屏東縣",
+    "district": "屏東市",
+    "address": "屏東縣屏東市建豐路180巷39號",
+    "phone": "(08)7351024",
+    "website": "https://www.facebook.com/ptautism/",
+    "category": "手作烘焙 & 星兒手作工藝",
+    "targetGroup": "自閉症青年（星兒）",
+    "featuredProducts": [
+      {
+        "name": "星兒手作手工餅乾/雪Q餅",
+        "desc": "嚴選安心食材，星兒一絲不苟細心稱重包裝。"
+      },
+      {
+        "name": "屏東星兒原創明信片與文創提袋",
+        "desc": "自閉症青年獨特而瑰麗的繪畫色彩世界。"
+      }
+    ],
+    "story": "屏東自閉症協進會匯聚南台灣星兒家庭的力量，建立星兒工坊。星兒們對規律與細節的極致追求，轉化為品質完美的烘焙與手作商品，讓社會大眾看見星兒獨特且耀眼的美麗光彩。",
+    "badges": [
+      "屏東星兒工坊",
+      "純真手作烘焙",
+      "星兒原創插畫",
+      "南台灣愛心據點"
+    ],
+    "heroCategory": "手作烘焙",
+    "brandTitle": "屏東星兒工坊",
+    "logoText": "星兒\n工坊",
+    "logoTheme": "ochre",
+    "brandTag": "手作烘焙",
+    "productTag": "自閉症星兒手工餅乾/雪Q",
+    "image": "/images/cat-textiles.png",
+    "verified": true
+  },
+  {
+    "id": 58,
+    "name": "財團法人伊甸社會福利基金會-創皂工坊",
+    "shortName": "伊甸創皂工坊（屏東東港）",
+    "region": "南部",
+    "city": "屏東縣",
+    "district": "東港鎮/枋寮鄉",
+    "address": "屏東縣東港鎮光復路二段104號",
+    "phone": "(08)8711612",
+    "website": "https://www.eden.org.tw/",
+    "category": "生活良品 & 天然冷製草本手工皂",
+    "targetGroup": "屏東偏鄉身心障礙朋友與原住民學員",
+    "featuredProducts": [
+      {
+        "name": "伊甸「羊奶左手香手工皂」",
+        "desc": "明星爆款！屏東在地新鮮羊奶與草本左手香低溫冷製，極度舒緩保濕。"
+      },
+      {
+        "name": "屏東在地可可脂滋潤皂禮盒",
+        "desc": "屏東特產可可油脂萃取，豐富抗氧化精華，沐浴如絲綢般柔滑。"
+      }
+    ],
+    "story": "伊甸基金會在屏東東港枋寮設立「創皂工坊」，善用南台灣豐沛的陽光與在地物產（如新鮮羊奶、左手香、屏東可可）。身障學員透過打皂、切皂、晾皂45天熟成，打造頂級溫潤的天然冷製皂。",
+    "badges": [
+      "伊甸屏東品牌",
+      "羊奶左手香明星皂",
+      "屏東可可脂冷製",
+      "45天自然熟成"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "伊甸創皂工坊",
+    "logoText": "伊甸\n創皂",
+    "logoTheme": "green",
+    "brandTag": "日常器物",
+    "productTag": "屏東羊奶左手香熟成皂",
+    "image": "/images/organizations/org-58.jpg",
+    "verified": true,
+    "imageSource": "https://www.eden.org.tw/downloads/banner/20260625104641_mob.jpg",
+    "imageDimensions": {
+      "width": 768,
+      "height": 450
+    }
+  },
+  {
+    "id": 59,
+    "name": "社團法人屏東縣啟智協進會",
+    "shortName": "屏東縣啟智協進會（種子工坊）",
+    "region": "南部",
+    "city": "屏東縣",
+    "district": "屏東市/內埔鄉",
+    "address": "屏東縣屏東市大連路60-17號",
+    "phone": "(08)7383015 / (08)7750688",
+    "website": "https://www.facebook.com/pingtung.mr/",
+    "category": "在地風味 & 屏東在地果乾手作茶點",
+    "targetGroup": "智能障礙及心智障礙青年",
+    "featuredProducts": [
+      {
+        "name": "屏東在地愛文芒果乾/鳳梨果乾",
+        "desc": "無加糖低溫慢烘，濃縮屏東艷陽下的天然果香。"
+      },
+      {
+        "name": "手作堅果穀物棒與手工餅乾",
+        "desc": "營養高纖，登山露營與辦公室健康零食。"
+      }
+    ],
+    "story": "屏東啟智協進會成立三十多年，用心灌溉每一顆慢飛種子。「種子工坊」結合屏東盛產的愛文芒果、金鑽鳳梨，由智障學員進行清洗、削皮、烘烤包裝，將南台灣最甜美的果香分享給全台朋友。",
+    "badges": [
+      "屏東無糖果乾",
+      "愛文芒果乾",
+      "種子工坊自立",
+      "天然無添加果香"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "屏東種子工坊",
+    "logoText": "種子\n工坊",
+    "logoTheme": "terra",
+    "brandTag": "在地風味",
+    "productTag": "屏東產地愛文芒果乾",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 60,
+    "name": "財團法人屏東縣私立基督教伯大尼之家",
+    "shortName": "伯大尼之家（伯大尼憨兒療癒農場）",
+    "region": "南部",
+    "city": "屏東縣",
+    "district": "屏東市",
+    "address": "屏東縣屏東市仁義16-6號",
+    "phone": "(08)7367264",
+    "website": "https://www.bethany-home.org.tw/",
+    "category": "在地風味 & 伯大尼自然農場生鮮加工",
+    "targetGroup": "無依重度心智障礙孤兒及院生",
+    "featuredProducts": [
+      {
+        "name": "伯大尼 人道放牧純純鮮乳/優酪乳",
+        "desc": "院生親手餵草撫摸乳牛，無調整無添加的高品質鮮乳。"
+      },
+      {
+        "name": "伯大尼自然農法肉品與手作果醬",
+        "desc": "農場自家飼養人道黑豬與自然熟成鮮果醬。"
+      }
+    ],
+    "story": "坐落於屏東大武山下的伯大尼之家，由挪威宣教士創立，收容無依無靠的重度智障孤兒。伯大尼建立佔地萬坪的療癒生態農場，憨兒在牧牛、擠乳與農耕中找到生命尊嚴，出產全台灣最純淨的自然鮮乳與農產！",
+    "badges": [
+      "屏東大武山自然農場",
+      "人道放牧天然鮮乳",
+      "挪威宣教士大愛",
+      "生命療癒典範"
+    ],
+    "heroCategory": "在地風味",
+    "brandTitle": "伯大尼之家自然農場",
+    "logoText": "伯大尼",
+    "logoTheme": "green",
+    "brandTag": "在地風味",
+    "productTag": "大武山放牧天然純鮮乳",
+    "image": "/images/cat-flavors.png",
+    "verified": true
+  },
+  {
+    "id": 61,
+    "name": "社團法人屏東縣向陽康復之友協會附設誠欣工作坊",
+    "shortName": "誠欣工作坊（屏東向陽康復之友）",
+    "region": "南部",
+    "city": "屏東縣",
+    "district": "屏東市",
+    "address": "屏東縣屏東市建國路156號",
+    "phone": "(08)7551200",
+    "website": "https://www.facebook.com/ptsunshine7551200/",
+    "category": "生活良品 & 清潔洗沐與手工皂",
+    "targetGroup": "精神障礙康復者",
+    "featuredProducts": [
+      {
+        "name": "誠欣天然香草草本手工皂",
+        "desc": "萃取迷迭香、茶樹等天然精油，清新舒緩。"
+      },
+      {
+        "name": "手作環保家事無毒洗劑",
+        "desc": "溫和去污無化學殘留，守護全家人健康。"
+      }
+    ],
+    "story": "屏東誠欣工作坊陪伴精神康復之友重建生活規律。在工作坊裡，學員們以「誠懇、欣喜」的態度用心調配每一塊手工皂與環保清潔劑，一步一腳印邁向康復自立的陽光大道。",
+    "badges": [
+      "精神康復重建",
+      "草本精油手工皂",
+      "環保無毒洗劑",
+      "屏東誠欣品質"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "誠欣工作坊",
+    "logoText": "誠欣",
+    "logoTheme": "slate",
+    "brandTag": "日常器物",
+    "productTag": "草本精油皂/無毒洗劑",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  },
+  {
+    "id": 62,
+    "name": "社團法人屏東縣微笑關懷協會",
+    "shortName": "屏東縣微笑關懷協會（微笑暖心手作）",
+    "region": "南部",
+    "city": "屏東縣",
+    "district": "屏東市/內埔鄉",
+    "address": "屏東縣屏東市自由路174號",
+    "phone": "(08)7325100",
+    "website": "https://www.facebook.com/smileca1015/",
+    "category": "生活良品 & 屏東在地溫暖手作",
+    "targetGroup": "身心障礙朋友與偏鄉弱勢家庭",
+    "featuredProducts": [
+      {
+        "name": "微笑手作花草沐浴鹽/精油香氛磚",
+        "desc": "屏東天然海鹽與花草精油調和，泡澡放鬆身心。"
+      },
+      {
+        "name": "暖心手作織品布包",
+        "desc": "在地媽媽與身障學員共同車縫，質樸優雅。"
+      }
+    ],
+    "story": "屏東微笑關懷協會將關懷深入屏東各鄉鎮角落，致力於提升身障朋友生活品質與社會參與。協會推動香氛沐浴手作與布藝創作，讓每位參與者重拾微笑，將暖暖的心意送到支持者手中。",
+    "badges": [
+      "屏東微笑品牌",
+      "天然花草沐浴鹽",
+      "偏鄉暖心陪伴",
+      "質樸手作布包"
+    ],
+    "heroCategory": "日常器物",
+    "brandTitle": "微笑關懷手作",
+    "logoText": "微笑\n關懷",
+    "logoTheme": "ochre",
+    "brandTag": "日常器物",
+    "productTag": "花草沐浴鹽/香氛磚",
+    "image": "/images/cat-objects.png",
+    "verified": true
+  }
+]
