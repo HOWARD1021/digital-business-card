@@ -20,11 +20,6 @@ export default function Home() {
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
-  const scrollToAbout = () => {
-    const el = document.getElementById("about");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
   const handleSelectRegion = (region: string) => {
     setSelectedRegion(region);
     setSelectedCity("");
@@ -47,16 +42,13 @@ export default function Home() {
       <Navbar />
 
       <main className="flex-1">
-        {/* 2. Hero Section with Calligraphy, Slogan & Artistic Taiwan Map */}
+        {/* 1. Hero Section with Calligraphy, Slogan & Artistic Taiwan Map */}
         <HeroSection onExplore={scrollToDirectory} />
 
-        {/* 3. Stats / Trust Bar (100% 台灣製造 | 62個在地機構 | 全台安心配送) */}
+        {/* 2. Stats / Trust Bar (100% 台灣在地手作 | 62家愛心機構 | 全台安心配送) */}
         <StatsBar />
 
-        {/* 4. Section 1: 來自台灣的日常風景 (日常器物 | 在地風味 | 島嶼織品) */}
-        <CategoryCards onSelectCategory={handleSelectCategory} />
-
-        {/* 5. 品牌夥伴・62 家機構手作良品檢索與圖文全覽 (已移至上方) */}
+        {/* 3. Section 1: 全台 62 家愛心機構導覽名錄 */}
         <OrganizationExplorer
           selectedRegion={selectedRegion}
           selectedCity={selectedCity}
@@ -66,13 +58,15 @@ export default function Home() {
           onSelectCategory={handleSelectCategory}
         />
 
-        {/* 6. Section 2: Side-by-Side Cards (與在地職人同行 | 安心溯源・看得見的堅持) */}
+        {/* 4. Section 2: 來自台灣的中秋心意風景 (台灣烘焙與禮盒 | 在地風味與茶點 | 日常洗沐與器物) */}
+        <CategoryCards onSelectCategory={handleSelectCategory} />
+
+        {/* 5. Section 3: Side-by-Side Cards (與在地職人同行 | 安心溯源・看得見的堅持) */}
         <SideBySideCards
           onExplorePartners={scrollToDirectory}
-          onExploreTraceability={scrollToAbout}
         />
 
-        {/* 7. Section 3: Bottom Dark Green Banner (把台灣的好，帶進生活裡) */}
+        {/* 6. Section 4: Bottom Dark Green Banner (把台灣的中秋溫暖，帶進家家戶戶) */}
         <BottomBanner onExplore={scrollToDirectory} />
       </main>
 

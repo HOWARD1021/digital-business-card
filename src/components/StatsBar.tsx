@@ -35,20 +35,24 @@ export default function StatsBar() {
   ];
 
   return (
-    <section className="bg-[#ede5d6] py-6 border-b border-[#ddcdb8]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+    <section className="bg-[#ede5d6] py-3.5 sm:py-6 border-b border-[#ddcdb8]">
+      <div className="max-w-5xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-3 gap-1.5 sm:gap-6 md:gap-8 divide-x divide-[#dec8ae]">
           {items.map((item, idx) => (
             <div
               key={idx}
-              className="flex items-center justify-center md:justify-start gap-4 py-2"
+              className={`flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-start gap-1.5 sm:gap-4 py-1 text-center sm:text-left ${
+                idx > 0 ? "pl-2 sm:pl-6" : ""
+              }`}
             >
-              {item.icon}
-              <div className="text-left font-serif">
-                <h3 className="text-base sm:text-lg font-extrabold text-[#28221c] leading-tight">
+              <div className="shrink-0 scale-85 sm:scale-100 origin-center">
+                {item.icon}
+              </div>
+              <div className="font-serif">
+                <h3 className="text-[11px] sm:text-base lg:text-lg font-extrabold text-[#28221c] leading-tight">
                   {item.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-[#695d52] mt-0.5 font-sans">
+                <p className="text-[9px] sm:text-xs text-[#695d52] mt-0.5 font-sans leading-tight hidden xs:block sm:block">
                   {item.desc}
                 </p>
               </div>

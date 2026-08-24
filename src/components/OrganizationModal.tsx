@@ -19,6 +19,8 @@ export interface Organization {
   story: string;
   badges: string[];
   heroCategory: string;
+  image?: string;
+  imageSource?: string;
 }
 
 interface OrganizationModalProps {
