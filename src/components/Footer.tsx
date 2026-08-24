@@ -55,6 +55,9 @@ export default function Footer() {
         {/* Bottom copyright */}
         <div className="mt-8 pt-4 border-t border-[#ebdcc8] text-center text-xs text-[#8c7b6d] font-sans">
           <span>© {new Date().getFullYear()} 台灣好物・全台 62 家身心障礙福利機構中秋公益送禮導覽專區. All rights reserved.</span>
+          <p className="mt-2 text-[10px] leading-relaxed text-[#a09284]">
+            Hero 圖片素材目前僅供本網站非商業展示與專題介紹使用；如有權利疑義，請與我們聯繫，我們將立即處理下架。
+          </p>
         </div>
 
       </div>
