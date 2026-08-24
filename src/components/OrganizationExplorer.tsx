@@ -4,7 +4,7 @@ import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import organizationsData from "../data/organizations.json";
 import OrganizationModal, { Organization } from "./OrganizationModal";
-import { Search, MapPin, ShieldCheck, ChevronDown, RefreshCw, Gift, ChevronLeft, ChevronRight } from "lucide-react";
+import { Search, MapPin, ShieldCheck, RefreshCw, Gift, ChevronLeft, ChevronRight } from "lucide-react";
 
 const PAGE_SIZE = 10;
 
@@ -49,7 +49,6 @@ export default function OrganizationExplorer({
   onSelectCategory,
 }: OrganizationExplorerProps) {
   const [searchQuery, setSearchQuery] = useState("");
-  const [sortBy, setSortBy] = useState<"default" | "hot" | "city">("default");
   const [currentPage, setCurrentPage] = useState(1);
   const [activeModalOrg, setActiveModalOrg] = useState<Organization | null>(null);
 
@@ -66,7 +65,7 @@ export default function OrganizationExplorer({
   const regions = ["全部", "北部", "中部", "南部", "東部", "離島"];
 
   const filteredOrgs = useMemo(() => {
-    let result = orgs.filter((org) => {
+    const result = orgs.filter((org) => {
       // Region filter
       if (selectedRegion && selectedRegion !== "全部" && org.region !== selectedRegion) {
         return false;
@@ -119,14 +118,8 @@ export default function OrganizationExplorer({
       return true;
     });
 
-    if (sortBy === "city") {
-      result = [...result].sort((a, b) => a.city.localeCompare(b.city, "zh-Hant"));
-    } else if (sortBy === "hot") {
-      result = [...result].sort((a, b) => b.badges.length - a.badges.length);
-    }
-
     return result;
-  }, [orgs, selectedRegion, selectedCity, selectedCategory, searchQuery, sortBy]);
+  }, [orgs, selectedRegion, selectedCity, selectedCategory, searchQuery]);
 
   const totalPages = Math.max(1, Math.ceil(filteredOrgs.length / PAGE_SIZE));
   const displayedOrgs = useMemo(() => {
@@ -139,7 +132,6 @@ export default function OrganizationExplorer({
     onSelectRegion("");
     onSelectCity("");
     onSelectCategory("");
-    setSortBy("default");
     setCurrentPage(1);
   };
 
@@ -288,30 +280,13 @@ export default function OrganizationExplorer({
           )}
         </div>
 
-        {/* 4. Results Count & Sort Dropdown Row matching design image */}
-        <div className="flex items-center justify-between mb-3.5 sm:mb-4 px-1 font-serif text-xs sm:text-sm">
+        {/* 4. Results Count */}
+        <div className="mb-3.5 sm:mb-4 px-1 font-serif text-xs sm:text-sm">
           <div className="text-[#332b24] font-bold">
             共 <span className="text-[#1b392b] text-sm sm:text-base font-black">{filteredOrgs.length}</span> 個愛心品牌
             <span className="text-[#7d7064] text-[11px] font-normal ml-1.5">
               （每頁最多 {PAGE_SIZE} 家）
             </span>
-          </div>
-
-          {/* Sort Selector */}
-          <div className="relative inline-flex items-center">
-            <select
-              value={sortBy}
-              onChange={(e) => {
-                setSortBy(e.target.value as "default" | "hot" | "city");
-                setCurrentPage(1);
-              }}
-              className="appearance-none bg-transparent pr-5 sm:pr-6 py-1 text-xs sm:text-sm font-bold text-[#332b24] cursor-pointer focus:outline-none font-serif"
-            >
-              <option value="default">最新上架</option>
-              <option value="hot">推薦排序</option>
-              <option value="city">依縣市排序</option>
-            </select>
-            <ChevronDown className="w-3.5 h-3.5 text-[#5c5044] absolute right-0 pointer-events-none" />
           </div>
         </div>
 
