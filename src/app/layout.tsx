@@ -32,6 +32,27 @@ export const metadata: Metadata = {
     "企業ESG中秋採購",
     "台灣製造中秋好物",
   ],
+  openGraph: {
+    title: "台灣好物・中秋送暖｜全台 62 家身心障礙福利機構中秋愛心禮盒與手作良品導覽",
+    description:
+      "月圓人團圓，用一份手作禮盒溫暖全台灣！探索全台身心障礙福利機構與庇護工場的中秋月餅、蛋黃酥與台灣手作好物。",
+    type: "website",
+    locale: "zh_TW",
+    images: [
+      {
+        url: "/images/organization-fallbacks/handmade-bakery.png",
+        width: 456,
+        height: 454,
+        alt: "台灣中秋手作月餅與兔子插畫",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "台灣好物・中秋送暖｜全台 62 家身心障礙福利機構",
+    description: "探索中秋月餅、蛋黃酥與台灣手作好物，用送禮支持庇護工場與身心障礙職人。",
+    images: ["/images/organization-fallbacks/handmade-bakery.png"],
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
