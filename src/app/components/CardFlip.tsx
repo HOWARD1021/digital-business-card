@@ -37,7 +37,7 @@ const defaultProfile: ProfileInfo = {
     twitter: "https://x.com/ms04626730",
     blog: "https://gooaye.teamtaiwan.win/"
   },
-  qrCodeUrl: "https://www.teamtaiwan.win/"
+  qrCodeUrl: "https://x.com/ms04626730"
 };
 
 export const CardFlip = () => {
@@ -154,7 +154,7 @@ export const CardFlip = () => {
                       </a>
                       <button
                         className="text-white hover:text-white/80 transition-colors p-2 hover:bg-white/20 rounded-full"
-                        aria-label="Show QR code"
+                        aria-label="Show X profile QR code"
                         tabIndex={0}
                         onClick={e => { e.stopPropagation(); setOverlay('qr'); }}
                       >
@@ -165,7 +165,7 @@ export const CardFlip = () => {
                 ) : overlay === 'qr' ? (
                   <div className="flex flex-col items-center justify-center w-full h-full">
                     <div className="bg-white p-4 rounded-xl shadow-lg">
-                      <Image src="/qrcode.png" alt="QR code" width={192} height={192} className="w-48 h-48 object-contain rounded" />
+                      <Image src="/qrcode.png" alt="QR code for Howard's X profile" width={192} height={192} className="w-48 h-48 object-contain rounded" />
                     </div>
                     <div className="mt-4 text-white break-all text-center">{profile.qrCodeUrl}</div>
                     <button
